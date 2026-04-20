@@ -1,13 +1,147 @@
-# Nuclei Poc 全网收集
-NucleiPocGather，每日更新
+# NucleiPocGather
 
-这个项目是一个 Python 脚本，用于批量克隆 GitHub 项目，获取 Nuclei POC，并将 POC 按类别分类存放到文件夹中。同时，使用 GitHub Action 每日自动运行脚本。
-# POC 详情统计
+Coletor e organizador de templates Nuclei com atualização automatizada.
 
-> **当前项目 POC 更新时间：**`2026-04-19 14:13`
+Este projeto usa Python para buscar templates Nuclei de vários repositórios GitHub, validar os arquivos encontrados, remover duplicidades, classificar os POCs em categorias e atualizar este `README.md` com estatísticas da coleção.
 
-| ID | 标签      | 数量 | 目录       | 数量 | 严重性   | 数量 |
-|:---| :-------- | :--- | :--------- | :--- | :------- | :--- |
+## O que o script faz
+
+O fluxo principal do arquivo `NucleiPocGather.py` executa estas etapas:
+
+1. Lê o arquivo `repo.txt` com a lista de repositórios-fonte.
+2. Faz `git clone` ou `git pull` desses repositórios em `clone-templates/`.
+3. Baixa a versão mais recente do binário `nuclei` para Linux `amd64`.
+4. Valida os templates YAML clonados e remove os inválidos.
+5. Compara os templates comunitários com os oficiais do `projectdiscovery/nuclei-templates`.
+6. Descarta arquivos iguais aos templates oficiais e classifica o restante em `poc/<categoria>/`.
+7. Remove duplicados por hash de arquivo e por conteúdo semântico dos campos principais do YAML.
+8. Gera o inventário `poc.txt` com todos os POCs encontrados.
+9. Atualiza automaticamente a seção de estatísticas deste `README.md`.
+
+## Componentes do projeto
+
+- `NucleiPocGather.py`: orquestra todo o pipeline de coleta, validação, organização e atualização.
+- `DeWeight.py`: remove duplicidades adicionais comparando o conteúdo relevante dos templates YAML.
+- `WirteREADME.py`: calcula estatísticas da coleção e atualiza a seção de métricas do `README.md`.
+- `repo.txt`: lista dos repositórios GitHub usados como fonte de templates.
+- `poc/`: diretório final com os templates organizados por categoria.
+- `poc.txt`: inventário textual gerado com todos os caminhos de arquivos `.yaml` e `.yml`.
+
+## Requisitos
+
+- Python 3.10 ou superior
+- `git`
+- `unzip`
+- Acesso de rede ao GitHub e à API pública do GitHub
+
+Dependências Python:
+
+```bash
+pip install requests tqdm PyYAML
+```
+
+## Configuração
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/lianqingsec/NucleiPocGather.git
+cd NucleiPocGather
+```
+
+### 2. Ajustar as fontes de coleta
+
+Edite o arquivo `repo.txt` e mantenha uma URL por linha.
+
+Exemplo:
+
+```text
+https://github.com/projectdiscovery/nuclei-templates
+https://github.com/redteambrasil/nuclei-templates
+```
+
+### 3. Instalar dependências
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install requests tqdm PyYAML
+```
+
+## Execução local
+
+Rode o pipeline completo com:
+
+```bash
+python NucleiPocGather.py
+```
+
+Saídas esperadas após a execução:
+
+- `poc/` atualizado com os templates organizados por categoria
+- `poc.txt` com a listagem de todos os arquivos YAML
+- `README.md` com estatísticas atualizadas
+
+## Implantação
+
+### Opção 1. GitHub Actions
+
+O repositório já possui o workflow `.github/workflows/main.yml`, que executa o script diariamente e também em `push` para `main`.
+
+Passos recomendados:
+
+1. Habilite `Actions` no repositório.
+2. Em `Settings > Actions > General`, ajuste `Workflow permissions` para `Read and write permissions`.
+3. Garanta que o branch padrão seja `main` ou ajuste o workflow conforme necessário.
+4. Faça commit das alterações; o workflow instalará as dependências e executará `python NucleiPocGather.py`.
+
+### Opção 2. Servidor Linux com agendamento
+
+Em um host Linux, você pode implantar com `cron`.
+
+Exemplo:
+
+```bash
+crontab -e
+```
+
+Agendamento diário às 09:00:
+
+```cron
+0 9 * * * cd /caminho/NucleiPocGather && /usr/bin/python3 NucleiPocGather.py >> /var/log/nucleipocgather.log 2>&1
+```
+
+## Estrutura de saída
+
+```text
+.
+├── NucleiPocGather.py
+├── DeWeight.py
+├── WirteREADME.py
+├── repo.txt
+├── poc/
+│   ├── cve/
+│   ├── wordpress/
+│   ├── auth/
+│   └── ...
+└── poc.txt
+```
+
+## Observações importantes
+
+- O script foi traduzido para pt-BR nos textos exibidos ao usuário e na documentação.
+- A lógica principal foi preservada.
+- A atualização do `README.md` agora usa marcadores dedicados, o que deixa a documentação mais segura para futuras edições.
+- O nome do módulo `WirteREADME.py` foi mantido para evitar impactos no fluxo atual.
+
+## Estatísticas da coleção
+
+<!-- stats:start -->
+> **Atualização dos POCs do projeto:** `2026-04-19 14:13`
+
+| ID | Tag | Quantidade | Diretório | Quantidade | Severidade | Quantidade |
+|:---|:----|-----------:|:----------|-----------:|:-----------|-----------:|
 | 1 | cve | 72580 | cve | 49525 | medium | 32301 |
 | 2 | wordpress | 66620 | other | 41195 | info | 25025 |
 | 3 | wp-plugin | 61606 | auth | 3547 | low | 24171 |
@@ -19,47 +153,5 @@ NucleiPocGather，每日更新
 | 9 | service | 13826 | sql_injection | 1141 | informative | 8 |
 | 10 | candidate | 13144 | social | 724 | cretical | 2 |
 
-**81 个目录，44572 个文件**
-## 如何使用
-
-### 克隆项目
-
-克隆这个项目到本地：
-
-```bash
-git clone https://github.com/lianqingsec/NucleiPocGather.git
-```
-
-进入项目目录：
-
-```bash
-cd NucleiPocGather
-```
-
-### 配置
-
-在 `repo.txt` 文件中配置监控 GitHub 项目信息。
-
-### 运行脚本
-
-运行 Python 脚本：
-
-```bash
-python NucleiPocGather.py
-```
-
-### GitHub Action
-
-在 GitHub 仓库中设置 Action，以便每日自动运行脚本。
-
-> 需要配置`Workflow permissions`为`Read and write`权限
-
-## 文件结构
-
-- `NucleiPocGather.py`: 收集全网 Nuclei POC 的脚本文件。
-- `DeWeight.py`: 对现有的 Nuclei POC 进行进一步去重的脚本文件。
-- `WirteREADME.py`: 统计现有的 POC 并更新 README.md 文件。
-- `repo.txt`: Nuclei POC 仓库列表。
-- `poc.txt`: 已存档 POC 列表。
-- `poc/`: 存放分类后的 Nuclei POC 文件夹。
-
+**81 diretórios, 44572 arquivos**
+<!-- stats:end -->

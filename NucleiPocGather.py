@@ -11,28 +11,26 @@ from DeWeight import deWeight
 
 class RepoManager:
     def __init__(self, repo_file, clone_dir):
-        self.repo_file = repo_file  # 包含仓库URL的文件路径
-        self.clone_dir = clone_dir  # 克隆目标目录
+        self.repo_file = repo_file  # Caminho do arquivo com as URLs dos repositórios.
+        self.clone_dir = clone_dir  # Diretório de destino dos clones.
 
     def ensure_clone_directory(self):
         try:
-            # 确保克隆目录存在
             os.makedirs(self.clone_dir, exist_ok=True)
         except OSError as e:
-            print(f"[x] 创建目录 {self.clone_dir} 时出错: {e}")
+            print(f"[x] Erro ao criar o diretório {self.clone_dir}: {e}")
             return False
         return True
 
     def read_repo_file(self):
         try:
-            # 读取包含仓库URL的文件
             with open(self.repo_file, 'r') as file:
                 urls = list(set(line.strip() for line in file if line.strip()))
             return urls
         except FileNotFoundError:
-            print(f"[x] 文件 {self.repo_file} 未找到。")
+            print(f"[x] Arquivo {self.repo_file} não encontrado.")
         except Exception as e:
-            print(f"[x] 读取文件 {self.repo_file} 时出错: {e}")
+            print(f"[x] Erro ao ler o arquivo {self.repo_file}: {e}")
         return []
 
     def process_repos(self, urls):
@@ -42,7 +40,7 @@ class RepoManager:
                 owner, repo_name = parts[-2], parts[-1]
                 target_dir = os.path.join(self.clone_dir, f"{owner}/{repo_name}".lower())
             else:
-                print(f"[x] 无效的URL格式: {url}")
+                print(f"[x] Formato de URL inválido: {url}")
                 continue
 
             if os.path.isdir(target_dir):
@@ -51,22 +49,22 @@ class RepoManager:
                 self.clone_repo(url, repo_name, target_dir)
 
     def update_repo(self, repo_name, target_dir):
-        print(f"[+] 更新 {repo_name} 在 {target_dir}")
+        print(f"[+] Atualizando {repo_name} em {target_dir}")
         try:
             result = os.system(f"git -C {target_dir} pull")
             if result != 0:
-                print(f"[x] 更新仓库 {repo_name} 在 {target_dir} 时出错")
+                print(f"[x] Erro ao atualizar o repositório {repo_name} em {target_dir}")
         except Exception as e:
-            print(f"[x] 更新仓库 {repo_name} 在 {target_dir} 时出错: {e}")
+            print(f"[x] Erro ao atualizar o repositório {repo_name} em {target_dir}: {e}")
 
     def clone_repo(self, url, repo_name, target_dir):
-        print(f"[+] 克隆 {repo_name} 到 {target_dir}")
+        print(f"[+] Clonando {repo_name} para {target_dir}")
         try:
             result = os.system(f"git clone {url} {target_dir}")
             if result != 0:
-                print(f"[x] 克隆仓库 {repo_name} 到 {target_dir} 时出错")
+                print(f"[x] Erro ao clonar o repositório {repo_name} para {target_dir}")
         except Exception as e:
-            print(f"[x] 克隆仓库 {repo_name} 到 {target_dir} 时出错: {e}")
+            print(f"[x] Erro ao clonar o repositório {repo_name} para {target_dir}: {e}")
 
     def run(self):
         if not self.ensure_clone_directory():
@@ -77,16 +75,15 @@ class RepoManager:
 
 class NucleiDownloader:
     def __init__(self, repo_owner, repo_name):
-        self.repo_owner = repo_owner  # 仓库拥有者
-        self.repo_name = repo_name  # 仓库名称
+        self.repo_owner = repo_owner  # Dono do repositório.
+        self.repo_name = repo_name  # Nome do repositório.
 
     def get_latest_release(self):
         url = f"https://api.github.com/repos/{self.repo_owner}/{self.repo_name}/releases/latest"
         response = requests.get(url)
         if response.status_code == 200:
             return response.json()
-        else:
-            raise Exception("[x] 获取最新版本失败")
+        raise Exception("[x] Falha ao obter a versão mais recente")
 
     def download_file(self, url, dest):
         response = requests.get(url, stream=True)
@@ -95,7 +92,7 @@ class NucleiDownloader:
                 for chunk in response.iter_content(1024):
                     f.write(chunk)
         else:
-            raise Exception(f"[x] 下载文件失败: {url}")
+            raise Exception(f"[x] Falha ao baixar o arquivo: {url}")
 
     def find_download_url(self, assets, platform='linux', architecture='amd64', file_extension='.zip'):
         for asset in assets:
@@ -109,24 +106,22 @@ class NucleiDownloader:
 
         download_url = self.find_download_url(assets)
         if not download_url:
-            raise Exception("[x] 未找到适用于Linux amd64的ZIP文件")
+            raise Exception("[x] Nenhum arquivo ZIP compatível com Linux amd64 foi encontrado")
 
-        print(f"[+] 从 {download_url} 下载")
+        print(f"[+] Baixando de {download_url}")
         self.download_file(download_url, dest_file)
-        print("[+] 已下载Nuclei ZIP文件")
+        print("[+] Arquivo ZIP do Nuclei baixado com sucesso")
 
 
 class POCValidator:
     def __init__(self, poc_dir, nuclei_executable="./nuclei"):
-        self.poc_dir = poc_dir  # POC文件目录
-        self.nuclei_executable = nuclei_executable  # Nuclei可执行文件路径
+        self.poc_dir = poc_dir  # Diretório dos arquivos POC.
+        self.nuclei_executable = nuclei_executable  # Caminho do binário do Nuclei.
 
     def get_yaml_files(self):
-        # 获取指定目录下的YAML文件
         return [f for f in os.listdir(self.poc_dir) if f.endswith('.yaml') or f.endswith('.yml')]
 
     def validate_poc(self, file_path):
-        # 验证POC文件格式
         command = f"{self.nuclei_executable} -t {file_path} -silent"
         return_code = os.system(command)
         return return_code == 0
@@ -135,28 +130,27 @@ class POCValidator:
         yaml_files = self.get_yaml_files()
         for file in yaml_files:
             file_path = os.path.join(self.poc_dir, file)
-            print(f"[+] 检查POC {file_path} 中...")
+            print(f"[+] Validando o POC {file_path}...")
 
             if self.validate_poc(file_path):
-                print(f"[+] {file_path}格式有效")
+                print(f"[+] {file_path} possui formato válido")
             else:
-                print(f"[x] {file_path}格式无效，已删除")
+                print(f"[x] {file_path} possui formato inválido e será removido")
                 os.remove(file_path)
 
 
 class POCOrganizer:
     def __init__(self, community_path, source_of_truth, output_path, category_map):
-        self.community_path = community_path  # 社区模板路径
-        self.source_of_truth = source_of_truth  # 核心模板路径
-        self.output_path = output_path  # 输出路径
-        self.category_map = category_map  # 分类映射
-        self.category_counts = {}  # 分类计数
-        self.file_hashes = {}  # 文件哈希值
+        self.community_path = community_path  # Caminho dos templates coletados da comunidade.
+        self.source_of_truth = source_of_truth  # Caminho dos templates oficiais do projeto.
+        self.output_path = output_path  # Diretório de saída.
+        self.category_map = category_map  # Mapeamento de categorias.
+        self.category_counts = {}  # Contagem de arquivos por categoria.
+        self.file_hashes = {}  # Hashes por categoria para evitar cópias repetidas.
 
     def get_all_yaml_files(self, dir_path):
         all_yaml_files = {}
         for dirpath, dirs, files in os.walk(dir_path):
-            # 排除特定目录
             dirs[:] = [d for d in dirs if d != ".git" and d != "projectdiscovery__nuclei-templates"]
             for filename in files:
                 if filename.endswith(".yml") or filename.endswith(".yaml"):
@@ -164,7 +158,6 @@ class POCOrganizer:
         return all_yaml_files
 
     def categorize_file(self, file_name):
-        # 根据文件名进行分类
         categories = []
         for category, keywords in self.category_map.items():
             if any(keyword in file_name.lower() for keyword in keywords):
@@ -172,7 +165,6 @@ class POCOrganizer:
         return categories if categories else ["other"]
 
     def file_hash(self, file_path):
-        # 计算文件哈希值
         hasher = hashlib.md5()
         with open(file_path, "rb") as f:
             buf = f.read()
@@ -180,7 +172,6 @@ class POCOrganizer:
         return hasher.hexdigest()
 
     def copy_file_to_categories(self, file_path, categories, file_hash_value):
-        # 复制文件到相应分类目录
         for category in categories:
             target_dir = os.path.join(self.output_path, category)
             os.makedirs(target_dir, exist_ok=True)
@@ -210,23 +201,23 @@ class POCOrganizer:
             self.copy_file_to_categories(community_file, categories, file_hash_value)
 
     def print_summary(self):
-        print("[+] 各类文件数量:")
+        print("[+] Quantidade de arquivos por categoria:")
         total_count = 0
         for category, count in self.category_counts.items():
             total_count += count
             print(f"[+] {category}: {count}")
-        print(f"[+] all: {total_count}")
+        print(f"[+] total: {total_count}")
 
 
 class DuplicateFileHandler:
     def __init__(self, base_dir):
-        self.base_dir = base_dir  # 基目录
-        self.file_hashes = defaultdict(list)  # 文件哈希值
-        self.duplicate_files = {}  # 重复文件
+        self.base_dir = base_dir  # Diretório base.
+        self.file_hashes = defaultdict(list)  # Hashes de arquivos.
+        self.duplicate_files = {}  # Arquivos duplicados.
 
     @staticmethod
     def calculate_file_hash(file_path):
-        """计算文件的 MD5 哈希值."""
+        """Calcula o hash MD5 de um arquivo."""
         hasher = hashlib.md5()
         with open(file_path, "rb") as f:
             buf = f.read()
@@ -234,7 +225,7 @@ class DuplicateFileHandler:
         return hasher.hexdigest()
 
     def get_yaml_files(self):
-        """递归遍历给定目录下的所有 .yaml 文件，并返回文件路径列表."""
+        """Percorre o diretório recursivamente e retorna todos os arquivos YAML."""
         file_paths = []
         for root, _, files in os.walk(self.base_dir):
             for filename in files:
@@ -244,38 +235,36 @@ class DuplicateFileHandler:
         return file_paths
 
     def find_duplicate_files(self, file_paths):
-        """找到内容相同的文件，并返回一个包含重复文件的字典."""
+        """Encontra arquivos com conteúdo idêntico."""
         with concurrent.futures.ThreadPoolExecutor() as executor:
             futures = {executor.submit(self.calculate_file_hash, file_path): file_path for file_path in file_paths}
-            for future in tqdm(concurrent.futures.as_completed(futures), total=len(file_paths), desc="计算文件哈希值"):
+            for future in tqdm(concurrent.futures.as_completed(futures), total=len(file_paths), desc="Calculando hashes dos arquivos"):
                 file_path = futures[future]
                 file_hash = future.result()
                 self.file_hashes[file_hash].append(file_path)
 
-        # 找到内容相同的文件
         self.duplicate_files = {hash_value: files for hash_value, files in self.file_hashes.items() if len(files) > 1}
 
     def print_and_remove_duplicate_files(self):
-        """打印内容相同的文件路径，并删除多余的文件."""
+        """Exibe e remove arquivos duplicados, mantendo apenas uma cópia."""
         total_duplicates = 0
 
         for hash_value, files in self.duplicate_files.items():
-            print(f"[+] 哈希值为 {hash_value} 的文件内容相同:")
+            print(f"[+] Os arquivos com hash {hash_value} possuem o mesmo conteúdo:")
             for file in files:
                 print(f"  {file}")
 
-            # 删除多余的文件，只保留一个
             for file_to_remove in files[1:]:
                 os.remove(file_to_remove)
-                print(f"[+] 删除文件: {file_to_remove}")
+                print(f"[+] Arquivo removido: {file_to_remove}")
                 total_duplicates += 1
 
-        print(f"[+] 总共有 {len(self.duplicate_files)} 组重复的文件.")
-        print(f"[+] 总共删除了 {total_duplicates} 个重复文件.")
+        print(f"[+] Total de grupos de arquivos duplicados: {len(self.duplicate_files)}")
+        print(f"[+] Total de arquivos duplicados removidos: {total_duplicates}")
 
     def process(self):
         file_paths = self.get_yaml_files()
-        print(f"[+] 找到 {len(file_paths)} 个 YAML 文件.")
+        print(f"[+] {len(file_paths)} arquivos YAML encontrados.")
 
         self.find_duplicate_files(file_paths)
         self.print_and_remove_duplicate_files()
@@ -319,9 +308,11 @@ def pocfenlei():
         "sensitive": ["sensitive"],
         "debug": ["debug"],
         "backup": ["backup"],
-        "auth": ["auth", "login", "signin", "sign_in", "sign-in", "oauth", "sso", "register", "signup", "sign_up",
-                 "sign-up", "password", "pwd", "passwd", "secret", "token", "credential", "cred", "jwt", "cookie",
-                 "session", "remember", "keycloak", "key"],
+        "auth": [
+            "auth", "login", "signin", "sign_in", "sign-in", "oauth", "sso", "register", "signup",
+            "sign_up", "sign-up", "password", "pwd", "passwd", "secret", "token", "credential", "cred",
+            "jwt", "cookie", "session", "remember", "keycloak", "key"
+        ],
         "atlassian": ["atlassian", "jira", "confluence", "bitbucket", "bamboo"],
         "config": ["config", "conf", "configuration"],
         "mysql": ["mysql", "mariadb"],
@@ -348,8 +339,11 @@ def pocfenlei():
         "mongodb": ["mongodb", "mongo"],
         "netlify": ["netlify"],
         "oracle": ["oracle"],
-        "java": ["java", "jsp", "jsf", "j2ee", "j2se", "j2me", "jvm", "jre", "jdk", "jboss", "tomcat", "glassfish",
-                 "wildfly", "jetty", "websphere", "weblogic", "spring", "struts", "hibernate", "mybatis", "shiro"],
+        "java": [
+            "java", "jsp", "jsf", "j2ee", "j2se", "j2me", "jvm", "jre", "jdk", "jboss", "tomcat",
+            "glassfish", "wildfly", "jetty", "websphere", "weblogic", "spring", "struts", "hibernate",
+            "mybatis", "shiro"
+        ],
         "javascript": ["javascript", "js"],
         "elk": ["elk", "elasticsearch", "kibana", "logstash"],
         "kafka": ["kafka"],
@@ -385,41 +379,41 @@ def pocfenlei():
 
 def getPocName():
     os.system('find . -type f \\( -iname "*.yaml" -o -iname "*.yml" \\)| sort > poc.txt')
-    print("[+] 所有的 POC 名称已写入文件 poc.txt")
+    print("[+] Todos os nomes de POCs foram gravados no arquivo poc.txt")
 
 
 def run():
-    # 1. 读取文件中的poc库地址，并下载
+    # 1. Lê a lista de repositórios e faz clone ou atualização.
     repo_file = "repo.txt"
     clone_dir = "clone-templates"
     manager = RepoManager(repo_file, clone_dir)
     manager.run()
 
-    # 2. 下载 nuclei
+    # 2. Baixa o binário do Nuclei para validar templates.
     downloader = NucleiDownloader(repo_owner="projectdiscovery", repo_name="nuclei")
     downloader.download_latest_release(dest_file="nuclei.zip")
     os.system("unzip nuclei.zip nuclei")
     os.system("rm -rf nuclei.zip")
 
-    # 3. 检查 POC 能否使用，不能使用的进行删除
+    # 3. Valida os POCs clonados e remove os inválidos.
     poc_validator = POCValidator(poc_dir="clone-templates")
     poc_validator.process_files()
 
-    # 4. 对所有的poc进行分类
+    # 4. Classifica todos os POCs válidos em diretórios por categoria.
     pocfenlei()
 
-    # 5. 对已有的poc进行 hash 计算去除重复的 poc
+    # 5. Remove arquivos com conteúdo idêntico do diretório final.
     base_dir = os.path.join(os.getcwd(), 'poc')
     handler = DuplicateFileHandler(base_dir)
     handler.process()
 
-    # 6. 获取所有的 POC 名字并写入文件中
+    # 6. Gera um inventário com os nomes de todos os POCs.
     getPocName()
 
-    # 7.对当前poc进行进一步的去重
+    # 7. Executa uma deduplicação adicional baseada no conteúdo dos campos principais.
     deWeight()
 
-    # 8.更新 README 文件
+    # 8. Atualiza as estatísticas do README.
     WirteREADME.wirte_readme()
 
 
