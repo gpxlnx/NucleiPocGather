@@ -138,20 +138,20 @@ Agendamento diário às 09:00:
 ## Estatísticas da coleção
 
 <!-- stats:start -->
-> **Atualização dos POCs do projeto:** `2026-04-22 13:14`
+> **Atualização dos POCs do projeto:** `2026-04-23 13:42`
 
 | ID | Tag | Quantidade | Diretório | Quantidade | Severidade | Quantidade |
 |:---|:----|-----------:|:----------|-----------:|:-----------|-----------:|
-| 1 | cve | 72713 | cve | 49555 | medium | 32313 |
-| 2 | wordpress | 66725 | other | 41265 | info | 25029 |
-| 3 | wp-plugin | 61703 | auth | 3547 | low | 24239 |
-| 4 | medium | 24866 | remote_code_execution | 2813 | high | 19507 |
-| 5 | low | 22857 | sql | 2237 | critical | 11754 |
-| 6 | tech | 18290 | wordpress | 1987 | unknown | 100 |
-| 7 | detect | 17524 | microsoft | 1628 | hight | 15 |
-| 8 | production | 16100 | detect | 1412 | meduim | 14 |
-| 9 | service | 13826 | sql_injection | 1129 | informative | 8 |
-| 10 | candidate | 13248 | social | 726 | cretical | 2 |
+| 1 | cve | 76200 | cve | 47108 | medium | 33893 |
+| 2 | wordpress | 70045 | other | 40897 | low | 25738 |
+| 3 | wp-plugin | 64890 | sql | 6765 | info | 25222 |
+| 4 | medium | 26297 | wordpress | 4723 | high | 19960 |
+| 5 | low | 24284 | remote_code_execution | 2507 | critical | 12089 |
+| 6 | production | 19430 | auth | 2103 | unknown | 106 |
+| 7 | tech | 18234 | microsoft | 1760 | meduim | 4 |
+| 8 | detect | 17556 | detect | 1675 | informative | 3 |
+| 9 | service | 13826 | web | 979 | hight | 2 |
+| 10 | candidate | 13343 | api | 876 | __cve_severity__ | 1 |
 
-**10 diretórios, 116519 arquivos**
+**10 diretórios, 120591 arquivos**
 <!-- stats:end -->
