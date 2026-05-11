@@ -138,7 +138,7 @@ Agendamento diário às 09:00:
 ## Estatísticas da coleção
 
 <!-- stats:start -->
-> **Atualização dos POCs do projeto:** `2026-05-10 13:20`
+> **Atualização dos POCs do projeto:** `2026-05-11 14:11`
 
 | ID | Tag | Quantidade | Diretório | Quantidade | Severidade | Quantidade |
 |:---|:----|-----------:|:----------|-----------:|:-----------|-----------:|
@@ -150,7 +150,7 @@ Agendamento diário às 09:00:
 | 6 | tech | 18291 | wordpress | 1998 | unknown | 101 |
 | 7 | detect | 17522 | microsoft | 1660 | hight | 15 |
 | 8 | production | 16104 | detect | 1406 | meduim | 14 |
-| 9 | service | 13827 | sql_injection | 1035 | informative | 8 |
+| 9 | service | 13827 | sql_injection | 1032 | informative | 8 |
 | 10 | candidate | 13732 | social | 733 | cretical | 2 |
 
 **10 diretórios, 117058 arquivos**
