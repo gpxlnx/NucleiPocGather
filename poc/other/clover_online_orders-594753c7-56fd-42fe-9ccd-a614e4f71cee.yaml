@@ -1,15 +1,15 @@
-id: clover_online_orders-9ca8e4ca-0ddf-492a-99c0-158ebdd7f86f
+id: clover_online_orders-594753c7-56fd-42fe-9ccd-a614e4f71cee
 
 info:
   name: >
-    Smart Online Order for Clover <= 1.6.0 - Cross-Site Request Forgery
+    Smart Online Order for Clover <= 1.6.0 - Unauthenticated Sensitive Information Exposure
   author: topscoder
-  severity: medium
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/9ca8e4ca-0ddf-492a-99c0-158ebdd7f86f?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/594753c7-56fd-42fe-9ccd-a614e4f71cee?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/clover-online-orders/"
     google-query: inurl:"/wp-content/plugins/clover-online-orders/"
     shodan-query: 'http.html:"wp-content/plugins/clover-online-orders/"'
-  tags: cve,wordpress,wp-plugin,clover-online-orders,medium,candidate
+  tags: cve,wordpress,wp-plugin,clover-online-orders,low,candidate
 
 http:
   - method: GET

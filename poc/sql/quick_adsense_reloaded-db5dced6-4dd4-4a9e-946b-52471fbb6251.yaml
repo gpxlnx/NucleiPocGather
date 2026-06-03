@@ -1,4 +1,4 @@
-id: quick_adsense_reloaded-fa5f1c1b-fb20-4106-a9d3-6e4e304d30be
+id: quick_adsense_reloaded-db5dced6-4dd4-4a9e-946b-52471fbb6251
 
 info:
   name: >
@@ -9,7 +9,7 @@ info:
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/fa5f1c1b-fb20-4106-a9d3-6e4e304d30be?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/db5dced6-4dd4-4a9e-946b-52471fbb6251?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

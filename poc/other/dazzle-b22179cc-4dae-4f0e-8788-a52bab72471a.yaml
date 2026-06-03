@@ -1,31 +1,31 @@
-id: carzone-8e68ec8c-e46a-4886-b386-9664a8e5ba26
+id: dazzle-b22179cc-4dae-4f0e-8788-a52bab72471a
 
 info:
   name: >
-    Car Zone <= 3.7 - Authenticated (Subscriber+) PHP Object Injection
+    Dazzle <= 1.0.0 - Unauthenticated Local File Inclusion
   author: topscoder
-  severity: low
+  severity: critical
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/8e68ec8c-e46a-4886-b386-9664a8e5ba26?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/b22179cc-4dae-4f0e-8788-a52bab72471a?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/themes/carzone/"
-    google-query: inurl:"/wp-content/themes/carzone/"
-    shodan-query: 'http.html:"wp-content/themes/carzone/"'
-  tags: cve,wordpress,wp-theme,carzone,low,candidate
+    fofa-query: "wp-content/themes/dazzle/"
+    google-query: inurl:"/wp-content/themes/dazzle/"
+    shodan-query: 'http.html:"wp-content/themes/dazzle/"'
+  tags: cve,wordpress,wp-theme,dazzle,critical,candidate
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/themes/carzone/style.css"
+      - "{{BaseURL}}/wp-content/themes/dazzle/style.css"
 
     extractors:
       - type: regex
@@ -43,9 +43,9 @@ http:
 
       - type: word
         words:
-          - "carzone"
+          - "dazzle"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 3.7')
+          - compare_versions(version, '<= 1.0.0')
