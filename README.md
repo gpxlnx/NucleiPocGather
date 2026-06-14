@@ -138,15 +138,15 @@ Agendamento diário às 09:00:
 ## Estatísticas da coleção
 
 <!-- stats:start -->
-> **Atualização dos POCs do projeto:** `2026-06-13 13:49`
+> **Atualização dos POCs do projeto:** `2026-06-14 13:50`
 
 | ID | Tag | Quantidade | Diretório | Quantidade | Severidade | Quantidade |
 |:---|:----|-----------:|:----------|-----------:|:-----------|-----------:|
-| 1 | cve | 104716 | cve | 57117 | medium | 43187 |
-| 2 | wordpress | 98234 | other | 56151 | low | 36937 |
-| 3 | wp-plugin | 90600 | sql | 10852 | high | 27812 |
-| 4 | low | 34814 | wordpress | 7160 | info | 27190 |
-| 5 | medium | 34367 | auth | 4432 | critical | 16062 |
+| 1 | cve | 104731 | cve | 57113 | medium | 43187 |
+| 2 | wordpress | 98237 | other | 56154 | low | 36939 |
+| 3 | wp-plugin | 90603 | sql | 10858 | high | 27815 |
+| 4 | low | 34816 | wordpress | 7162 | info | 27190 |
+| 5 | medium | 34367 | auth | 4433 | critical | 16057 |
 | 6 | candidate | 33656 | detect | 1867 | unknown | 137 |
 | 7 | tech | 18165 | remote_code_execution | 1827 | informative | 19 |
 | 8 | detect | 17342 | web | 1412 | meduim | 19 |
