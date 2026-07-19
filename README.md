@@ -138,11 +138,11 @@ Agendamento diário às 09:00:
 ## Estatísticas da coleção
 
 <!-- stats:start -->
-> **Atualização dos POCs do projeto:** `2026-07-18 14:24`
+> **Atualização dos POCs do projeto:** `2026-07-19 14:13`
 
 | ID | Tag | Quantidade | Diretório | Quantidade | Severidade | Quantidade |
 |:---|:----|-----------:|:----------|-----------:|:-----------|-----------:|
-| 1 | cve | 88100 | other | 55516 | medium | 36826 |
+| 1 | cve | 88100 | other | 55517 | medium | 36826 |
 | 2 | wordpress | 81568 | cve | 42352 | low | 30072 |
 | 3 | wp-plugin | 74081 | sql | 6565 | info | 27989 |
 | 4 | candidate | 34572 | wordpress | 5061 | high | 25541 |
@@ -153,5 +153,5 @@ Agendamento diário às 09:00:
 | 9 | high | 14508 | api | 1367 | hight | 15 |
 | 10 | service | 13839 | sql_injection | 1351 | cretical | 4 |
 
-**10 diretórios, 138755 arquivos**
+**10 diretórios, 138756 arquivos**
 <!-- stats:end -->
