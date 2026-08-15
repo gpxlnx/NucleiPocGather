@@ -1,15 +1,15 @@
-id: gdpr_cookie_consent-572bfa82-92f5-4801-8710-0626ca563a6c
+id: gdpr_cookie_consent-bba8007f-7254-4201-8f94-7bf921a33a27
 
 info:
   name: >
-    Cookie Banner for GDPR / CCPA <= 4.3.5 - Authenticated (Administrator+) SQL Injection via 's' Parameter
+    Cookie Banner for GDPR / CCPA <= 4.3.5 - Authenticated (Subscriber+) Stored Cross-Site Scripting via 'regionArray' Parameter
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/572bfa82-92f5-4801-8710-0626ca563a6c?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/bba8007f-7254-4201-8f94-7bf921a33a27?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

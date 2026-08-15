@@ -1,15 +1,15 @@
-id: js_support_ticket-c885e9d8-7e43-4a2e-a111-b156161a58b1
+id: js_support_ticket-0dfd1e36-1ff5-467c-bafe-fbcade37fe9c
 
 info:
   name: >
-    JS Help Desk – AI-Powered Support & Ticketing System < 3.1.4 - Authenticated (Subscriber+) Information Exposure
+    JS Help Desk – AI-Powered Support & Ticketing System < 3.1.4 - Unauthenticated Arbitrary Media Upload
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/c885e9d8-7e43-4a2e-a111-b156161a58b1?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0dfd1e36-1ff5-467c-bafe-fbcade37fe9c?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

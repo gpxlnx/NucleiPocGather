@@ -1,15 +1,15 @@
-id: wp_travel-f490dd2b-34d6-4e19-8788-d30ad0c67e95
+id: wp_travel-c4d496d1-fc9a-4db5-b5ad-aa5c66ecd3cb
 
 info:
   name: >
-    WP Travel – Ultimate Travel Booking System, Tour Management Engine < 11.8.1 - Authenticated (Subscriber+) Insecure Direct Object Reference
+    WP Travel – Ultimate Travel Booking System, Tour Management Engine < 11.8.1 - Unauthenticated Payment Bypass
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f490dd2b-34d6-4e19-8788-d30ad0c67e95?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/c4d496d1-fc9a-4db5-b5ad-aa5c66ecd3cb?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

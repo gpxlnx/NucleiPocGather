@@ -1,31 +1,31 @@
-id: kirki-7ff92bf8-371e-4d47-881c-a0f9eadc5061
+id: flx_woo-f563412d-5708-43c4-a44e-7645c5b4f835
 
 info:
   name: >
-    Kirki – Freeform Page Builder, Website Builder & Customizer <= 6.1.1 - Missing Authorization
+    FlxWoo < 3.1.1 - Unauthenticated Payment Bypass
   author: topscoder
-  severity: high
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/7ff92bf8-371e-4d47-881c-a0f9eadc5061?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f563412d-5708-43c4-a44e-7645c5b4f835?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/kirki/"
-    google-query: inurl:"/wp-content/plugins/kirki/"
-    shodan-query: 'http.html:"wp-content/plugins/kirki/"'
-  tags: cve,wordpress,wp-plugin,kirki,high,candidate
+    fofa-query: "wp-content/plugins/flx-woo/"
+    google-query: inurl:"/wp-content/plugins/flx-woo/"
+    shodan-query: 'http.html:"wp-content/plugins/flx-woo/"'
+  tags: cve,wordpress,wp-plugin,flx-woo,low,candidate
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/kirki/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/flx-woo/readme.txt"
 
     extractors:
       - type: regex
@@ -43,9 +43,9 @@ http:
 
       - type: word
         words:
-          - "kirki"
+          - "flx-woo"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 6.1.1')
+          - compare_versions(version, '< 3.1.1')

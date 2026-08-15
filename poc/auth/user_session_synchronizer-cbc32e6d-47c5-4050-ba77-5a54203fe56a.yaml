@@ -1,24 +1,24 @@
-id: CVE-2025-32612-user_session_synchronizer-2c79caf2-1639-4ae3-b39b-2838db6febb0
+id: user_session_synchronizer-cbc32e6d-47c5-4050-ba77-5a54203fe56a
 
 info:
   name: >
-    User Session Synchronizer <= 1.4.0 - Cross-Site Request Forgery to Stored Cross-Site Scripting
+    User Session Synchronizer <= 1.4.0 - Unauthenticated Authentication Bypass to Account Takeover via 'ussync-key', 'ussync-token', and 'ussync-ref' Parameters
   author: topscoder
-  severity: medium
+  severity: critical
   description: >
-    The User Session Synchronizer plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.4.0. This is due to missing or incorrect nonce validation on a function. This makes it possible for unauthenticated attackers to update settings and inject malicious web scripts via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
+    
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/2c79caf2-1639-4ae3-b39b-2838db6febb0?source=api-prod
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/cbc32e6d-47c5-4050-ba77-5a54203fe56a?source=api-scan
   classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-    cvss-score: 6.1
-    cve-id: CVE-2025-32612
+    cvss-metrics: 
+    cvss-score: 
+    cve-id: 
   metadata:
     fofa-query: "wp-content/plugins/user-session-synchronizer/"
     google-query: inurl:"/wp-content/plugins/user-session-synchronizer/"
     shodan-query: 'http.html:"wp-content/plugins/user-session-synchronizer/"'
-  tags: cve,wordpress,wp-plugin,user-session-synchronizer,medium,production
+  tags: cve,wordpress,wp-plugin,user-session-synchronizer,critical,candidate
 
 http:
   - method: GET

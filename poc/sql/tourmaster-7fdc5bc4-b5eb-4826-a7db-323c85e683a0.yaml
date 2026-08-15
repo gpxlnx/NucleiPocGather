@@ -1,31 +1,31 @@
-id: payu_india-44b777bc-36fb-46ea-8cc9-3b3b0e681e1f
+id: tourmaster-7fdc5bc4-b5eb-4826-a7db-323c85e683a0
 
 info:
   name: >
-    PayU CommercePro < 3.9.0 - Missing Authorization
+    Tour Master - Tour Booking, Travel, Hotel < 5.4.8 - Unauthenticated Stored Cross-Site Scripting
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/44b777bc-36fb-46ea-8cc9-3b3b0e681e1f?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/7fdc5bc4-b5eb-4826-a7db-323c85e683a0?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/payu-india/"
-    google-query: inurl:"/wp-content/plugins/payu-india/"
-    shodan-query: 'http.html:"wp-content/plugins/payu-india/"'
-  tags: cve,wordpress,wp-plugin,payu-india,high,candidate
+    fofa-query: "wp-content/plugins/tourmaster/"
+    google-query: inurl:"/wp-content/plugins/tourmaster/"
+    shodan-query: 'http.html:"wp-content/plugins/tourmaster/"'
+  tags: cve,wordpress,wp-plugin,tourmaster,high,candidate
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/payu-india/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/tourmaster/readme.txt"
 
     extractors:
       - type: regex
@@ -43,9 +43,9 @@ http:
 
       - type: word
         words:
-          - "payu-india"
+          - "tourmaster"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '< 3.9.0')
+          - compare_versions(version, '< 5.4.8')

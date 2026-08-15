@@ -1,15 +1,15 @@
-id: payu_india-44b777bc-36fb-46ea-8cc9-3b3b0e681e1f
+id: payu_india-a50f0b34-fce7-4bae-b3da-c2f521d15444
 
 info:
   name: >
-    PayU CommercePro < 3.9.0 - Missing Authorization
+    PayU CommercePro Plugin <= 3.8.9 - Missing Authorization
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/44b777bc-36fb-46ea-8cc9-3b3b0e681e1f?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/a50f0b34-fce7-4bae-b3da-c2f521d15444?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -48,4 +48,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '< 3.9.0')
+          - compare_versions(version, '<= 3.8.9')
