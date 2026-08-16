@@ -14972,7 +14972,7 @@
 ./poc/backup/everest-backup-421c384b1afa892cba8ed3269d60faa4.yaml
 ./poc/backup/everest-backup-7761182ec8a559d2e3cae14625ef2ccd.yaml
 ./poc/backup/everest-backup-c5cfc7a8f5c040156a3bb37da7e93d2e.yaml
-./poc/backup/everest-backup-d41d8cd98f00b204e9800998ecf8427e_1.yaml
+./poc/backup/everest-backup-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/backup/everest-backup-e74f99161d093b9cb39fb38ddc9c1fa7.yaml
 ./poc/backup/everest-backup-plugin-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/backup/everest-backup-plugin.yaml
@@ -17628,7 +17628,7 @@
 ./poc/crlf_injection/viewlinc-crlf-injection_2.yaml
 ./poc/crlf_injection/viewlinc-crlf-injection_3.yaml
 ./poc/cross_site_request_forgery/CSRF-2025-06581-bitrix-sessid-bypass_1.yaml
-./poc/cross_site_request_forgery/bitrix-csrf-vulnerabilities.yaml
+./poc/cross_site_request_forgery/CSRF-bitrix-csrf-vulnerabilities.yaml
 ./poc/cross_site_request_forgery/csrf-guard-detect.yaml
 ./poc/cross_site_request_forgery/csrf-no-origin.yaml
 ./poc/cross_site_request_forgery/csrf-token-leakage.yaml
@@ -158310,7 +158310,7 @@
 ./poc/drupal/drupal_module-simple_revision-unsupported_1.yaml
 ./poc/drupal/drupal_module-smart_trim-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-smart_trim-cross-site-scripting_2.yaml
-./poc/drupal/drupal_module-smartling-multiple-vulnerabilities_1.yaml
+./poc/drupal/drupal_module-smartling-multiple-vulnerabilities.yaml
 ./poc/drupal/drupal_module-social-access-bypass_1.yaml
 ./poc/drupal/drupal_module-social-access-bypass_2.yaml
 ./poc/drupal/drupal_module-socialbase-access-bypass_1.yaml
@@ -160414,6 +160414,9 @@
 ./poc/ftp/wanhuOA-download-ftp.yaml
 ./poc/ftp/wd-nas-ftp-download-rce.yaml
 ./poc/ftp/web-ftp-detect-11135.yaml
+./poc/ftp/web-ftp-detect-11136.yaml
+./poc/ftp/web-ftp-detect-11137.yaml
+./poc/ftp/web-ftp-detect-11138.yaml
 ./poc/ftp/web-ftp-detect-11138_1.yaml
 ./poc/ftp/web-ftp-detect_1.yaml
 ./poc/ftp/wftpserver.yaml
@@ -160439,6 +160442,7 @@
 ./poc/ftp/ws-ftp-ini_2_1.yaml
 ./poc/ftp/ws-ftp-log.yaml
 ./poc/ftp/ws-ftp-log_1.yaml
+./poc/ftp/ws_ftp-server-web-transfer.yaml
 ./poc/ftp/ws_ftp-server-web-transfer_1.yaml
 ./poc/ftp/ws_ftp-ssh-detect.yaml
 ./poc/ftp/ws_ftp_server.yaml
@@ -168475,7 +168479,6 @@
 ./poc/nginx/yongyou-BIP-nginx-lua-fileread.yaml
 ./poc/nodejs/CVE-2014-7151-x_forms_express-93badb2f-bb47-4ae6-a447-d8237cc9237f.yaml
 ./poc/nodejs/CVE-2015-9452-nex_forms_express_wp_form_builder-6989e54b-ce5e-4c79-bd0d-0f7978a4bd44.yaml
-./poc/nodejs/CVE-2019-15837-webp_express-3b7108fc-0eb2-4f9f-b747-3b83c57a1b53.yaml
 ./poc/nodejs/CVE-2019-16251-yith_paypal_express_checkout_for_woocommerce-3b34a0c6-3573-48c7-8edb-c9cf9503da06.yaml
 ./poc/nodejs/CVE-2020-36670-nex_forms_express_wp_form_builder-01940eeb-b4a6-450d-b646-84f415ca92c9.yaml
 ./poc/nodejs/CVE-2021-24705-nex_forms_express_wp_form_builder-8a7b4d0b-9845-4d0b-b255-a311076f5ca7.yaml
@@ -168518,8 +168521,8 @@
 ./poc/nodejs/CVE-2024-54305-jt_express-999d8168-b4be-492e-8f25-9df104711341.yaml
 ./poc/nodejs/CVE-2024-54329-clevernode_related_content-e70a1197-b5b1-4f30-a253-89eb198c670e.yaml
 ./poc/nodejs/CVE-2024-6478-ctt_expresso_para_woocommerce-fa5ae08b-d85f-45aa-9617-ec629b8ec985.yaml
+./poc/nodejs/CVE-2024-6687-ctt_expresso_para_woocommerce-13088645-8233-40fb-8755-cbdf44c0eaf7.yaml
 ./poc/nodejs/CVE-2025-10185-nex_forms_express_wp_form_builder-e68d47e7-9a42-4a77-aefa-fe130500cbd3.yaml
-./poc/nodejs/CVE-2025-11379-webp_express-c28479bf-768a-4ab4-8e74-ad367b9b744f.yaml
 ./poc/nodejs/CVE-2025-14803-nex_forms_express_wp_form_builder-097c3257-6479-4169-ac17-cb1629aef7a1.yaml
 ./poc/nodejs/CVE-2025-15510-nex_forms_express_wp_form_builder-ddfa5a3d-fef2-4049-915c-51c3e28153bf.yaml
 ./poc/nodejs/CVE-2025-22286-ltl_freight_quotes_worldwide_express_edition-1fdc68b3-271c-43e1-a785-195f68d790f7.yaml
@@ -168608,6 +168611,7 @@
 ./poc/nodejs/ctt-expresso-para-woocommerce-ee441b53bf9b33f64a25f63497a5507c.yaml
 ./poc/nodejs/ctt-expresso-para-woocommerce-f35a01bcf427c70c611ddacf618492f8.yaml
 ./poc/nodejs/ctt-expresso-para-woocommerce.yaml
+./poc/nodejs/ctt-expresso-para-woocommerce_1.yaml
 ./poc/nodejs/ctt_expresso_para_woocommerce-13088645-8233-40fb-8755-cbdf44c0eaf7.yaml
 ./poc/nodejs/ctt_expresso_para_woocommerce-598768fe-e36d-48d8-925e-64513f36b18b.yaml
 ./poc/nodejs/ctt_expresso_para_woocommerce-fa5ae08b-d85f-45aa-9617-ec629b8ec985.yaml
@@ -168670,7 +168674,6 @@
 ./poc/nodejs/grandnode.yaml
 ./poc/nodejs/hashnode.yaml
 ./poc/nodejs/hashnode_1.yaml
-./poc/nodejs/ibm-web-traffic-express-caching-proxy.yaml
 ./poc/nodejs/jt-express.yaml
 ./poc/nodejs/jt_express-999d8168-b4be-492e-8f25-9df104711341.yaml
 ./poc/nodejs/kube-api-nodes-8507.yaml
@@ -168689,7 +168692,6 @@
 ./poc/nodejs/mailsiteexpress.yaml
 ./poc/nodejs/mongo-express-2.yaml
 ./poc/nodejs/mongo-express-cve-2019-10758.yaml
-./poc/nodejs/mongo-express-web-gui.yaml
 ./poc/nodejs/mongo-express.yaml
 ./poc/nodejs/mongo-express1.yaml
 ./poc/nodejs/mongo-express2.yaml
@@ -168801,6 +168803,7 @@
 ./poc/nodejs/nodejs-eval-rce.yaml
 ./poc/nodejs/nodejs-framework-exceptions_1.yaml
 ./poc/nodejs/nodejs-rce-param-fuzzer.yaml
+./poc/nodejs/nodejs-rce.yaml
 ./poc/nodejs/nodejs-read-local-files.yaml
 ./poc/nodejs/nodered-default-login_1.yaml
 ./poc/nodejs/npm-access-token.yaml
@@ -168882,8 +168885,6 @@
 ./poc/nodejs/unauthorized-puppet-node-manager-detect_2.yaml
 ./poc/nodejs/unauthorized-puppet-node-manager.yaml
 ./poc/nodejs/wc_ja_ja_pagamentos_multicaixa_express-a21b5306-e6b3-4186-a001-eb280c8d104c.yaml
-./poc/nodejs/webp-express-802342a8791d6bf81a3a97aaebbba8bf.yaml
-./poc/nodejs/webp-express_2.yaml
 ./poc/nodejs/widgets-for-aliexpress-reviews-ef8cb6fc353aaae2bbe90dfc74187793.yaml
 ./poc/nodejs/widgets-for-aliexpress-reviews.yaml
 ./poc/nodejs/widgets_for_aliexpress_reviews-504c0132-530b-4184-b19a-97e68df79b48.yaml
@@ -168893,10 +168894,12 @@
 ./poc/nodejs/woo_aliexpress_dropshipping-02d994b7-2891-47d0-92d3-c33c4eac54f0.yaml
 ./poc/nodejs/woo_aliexpress_dropshipping-fbc7e515-c712-4a39-a0f7-c3f646083060.yaml
 ./poc/nodejs/woocommerce-gateway-paypal-express-checkout.yaml
+./poc/nodejs/woocommerce-gateway-paypal-express-checkout_1.yaml
 ./poc/nodejs/wooshark-aliexpress-importer-220cfcaea8bd805a1bd4954cc50bfd1b.yaml
 ./poc/nodejs/wooshark-aliexpress-importer-251878194ade953b8c423c841a6b42d8.yaml
 ./poc/nodejs/wooshark_aliexpress_importer-4a2e636d-e602-4ab0-80f2-525a8a1f8388.yaml
 ./poc/nodejs/wooshark_aliexpress_importer-f8812cfe-4bbe-44ba-9513-7f81bad68d11.yaml
+./poc/nodejs/wordpress-woocommerce-gateway-paypal-express-checkout.yaml
 ./poc/nodejs/wp-express-checkout-3a2dcc07f8c7c3193b4557fc17bcc1a5.yaml
 ./poc/nodejs/wp-express-checkout-9c395d3672d8686c11a58114a97fb2b9.yaml
 ./poc/nodejs/wp_express_checkout-42cd1b53-400f-4933-b3cc-2fd9079e241c.yaml
@@ -168907,6 +168910,7 @@
 ./poc/nodejs/yaml-poc-icegram-icegram_express-leak-CVE-2019-19985.yml
 ./poc/nodejs/yaml-poc-mongo_express_project-mongo_express-other-CVE-2019-10758.yml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-2b9f2a0bb6fbd2e964b66d810f6cd59a.yaml
+./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-959b1069d80fdc3a44260ad71185acf0.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-a472e8d344476ac1fe5c7a6c4cbb802f.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-ae96f20d6efadfed36fce19e293bf596.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-d41d8cd98f00b204e9800998ecf8427e.yaml
@@ -200271,6 +200275,7 @@
 ./poc/other/conditional-flow-negative.yaml
 ./poc/other/conditional-menus_1.yaml
 ./poc/other/conditional_menus-7f4cf85d-6105-4f7d-b4a0-18a3513a93a8.yaml
+./poc/other/conductor.yaml
 ./poc/other/coneblog-widgets-bc060695098fbf1df6eb67d564047f66.yaml
 ./poc/other/coneblog-widgets-ec4fe1cabb457f15256813e0e7ad1522.yaml
 ./poc/other/coneblog-widgets_1.yaml
@@ -211329,6 +211334,7 @@
 ./poc/other/fileorganizer-ffbed6540cd0ed660ed2118f5ce9a483.yaml
 ./poc/other/fileread.yaml
 ./poc/other/fileread.yml
+./poc/other/filerise.yaml
 ./poc/other/files-download-delay-08fd51fbc78181d1e34dd9d45b2727c0.yaml
 ./poc/other/files_download_delay-217f3595-3c35-46c1-a02c-e8829732a719.yaml
 ./poc/other/files_download_delay-570942bf-49b1-4217-abc6-5e83f27d9824.yaml
@@ -214859,6 +214865,7 @@
 ./poc/other/gossamer-forum.yaml
 ./poc/other/gostore-83abcebf-2d39-4ccd-9606-1a1b04f79675.yaml
 ./poc/other/gotcha_gesture_based_captcha-6e7f1fe6-0a23-48e1-a75f-f8c1c8d4f8e0.yaml
+./poc/other/gotenberg.yaml
 ./poc/other/gotham_block_extra_light-b194b241-d8f4-430c-b00c-d84190026bad.yaml
 ./poc/other/gotham_block_extra_light-b4c36899-3c7b-41b6-a38d-86c8834b4c03.yaml
 ./poc/other/gotify-panel_1.yaml
@@ -215955,6 +215962,7 @@
 ./poc/other/hejia-oa.yaml
 ./poc/other/hel_online_classroom-0612c0be-f1c0-4f74-a769-e4616f103ee6.yaml
 ./poc/other/helion-b0e63d48-8749-4c10-a086-425e81df6920.yaml
+./poc/other/helix3.yaml
 ./poc/other/hello-dolly.yaml
 ./poc/other/hello-dolly_1.yaml
 ./poc/other/hello-elementor-4871f7fef9821ad7021876ca49006f78.yaml
@@ -216330,6 +216338,7 @@
 ./poc/other/holmes.yaml
 ./poc/other/homarr-panel.yaml
 ./poc/other/homarr-panel_1.yaml
+./poc/other/homarr.yaml
 ./poc/other/home-assistant-7979.yaml
 ./poc/other/home-assistant-7980.yaml
 ./poc/other/home-assistant-7980_1.yaml
@@ -221794,6 +221803,7 @@
 ./poc/other/lightning-3b007d8a-3096-42f3-a7be-e0e0d3addf0b.yaml
 ./poc/other/lightning-42c8a5445d70abc166f93c14f3500712.yaml
 ./poc/other/lightning.yaml
+./poc/other/lightrag.yaml
 ./poc/other/lightspeed-6b2e713fae7e2284bc8b24ee72fe8540.yaml
 ./poc/other/lightspeed-89620065-b961-49c9-a662-bee300b5da72.yaml
 ./poc/other/lightspeed-b7255a0e25619c795aa92a8363da00bf.yaml
@@ -222369,6 +222379,7 @@
 ./poc/other/local_sync-11bb7190-023b-45e1-99a5-7313c489ef45.yaml
 ./poc/other/local_syndication-7774cdfd-622a-4608-9efd-273923a0d0aa.yaml
 ./poc/other/localai.yaml
+./poc/other/localgov_workflows.yaml
 ./poc/other/localgpt-panel.yaml
 ./poc/other/localgrid-302e80da-8a7e-4883-8e0f-658fff2579bd.yaml
 ./poc/other/localgrid.yaml
@@ -224678,6 +224689,7 @@
 ./poc/other/merlin-c2-jarm.yaml
 ./poc/other/merlin-c2-jarm_1.yaml
 ./poc/other/mesa_mesa_reservation_widget-fb66f8f4-1800-41f8-bd67-70d89f612144.yaml
+./poc/other/meshery.yaml
 ./poc/other/mesmerize-18eb8b2a-8e08-4f78-9501-927c025ea574.yaml
 ./poc/other/mesmerize-companion-7a3ee5be3b9ac3238f226b3bc5df64d0.yaml
 ./poc/other/mesmerize-companion-c42d9ca4525a34842cc41f3d5771cb41.yaml
@@ -228718,6 +228730,7 @@
 ./poc/other/opencats-panel.yaml
 ./poc/other/opencats-panel_1.yaml
 ./poc/other/opencats.yaml
+./poc/other/openchamber.yaml
 ./poc/other/openclaw-agent-files.yaml
 ./poc/other/openclaw-browser-cdp.yaml
 ./poc/other/openclaw-discord-interactions.yaml
@@ -256248,7 +256261,6 @@
 ./poc/remote_code_execution/CVE-2024-6500-inpost_for_woocommerce-7b57e750-71ec-4c52-999b-6c14a78c3bff.yaml
 ./poc/remote_code_execution/CVE-2024-6566-aramex_shipping_woocommerce-d62bd71c-3d08-4767-b471-a1d5a17fe6ba.yaml
 ./poc/remote_code_execution/CVE-2024-6566-aramex_shipping_woocommerce-d62bd71c-3d08-4767-b471-a1d5a17fe6ba_1.yaml
-./poc/remote_code_execution/CVE-2024-6687-ctt_expresso_para_woocommerce-13088645-8233-40fb-8755-cbdf44c0eaf7.yaml
 ./poc/remote_code_execution/CVE-2024-6799-yith_essential_kit_for_woocommerce_1-ca497ffa-6306-46dc-895f-94f1d5236e28.yaml
 ./poc/remote_code_execution/CVE-2024-7027-woocommerce_pdf_vouchers-b6cf27d9-c0be-4cff-8867-19297f6d79d7.yaml
 ./poc/remote_code_execution/CVE-2024-7491-woocommerce_products_filter-daf6b0d5-79a6-4b8f-924e-9e78cb2b5742.yaml
@@ -257817,7 +257829,6 @@
 ./poc/remote_code_execution/cisco-cloudcenter-suite-rce.yaml
 ./poc/remote_code_execution/cisco-rv-series-rce.yaml
 ./poc/remote_code_execution/cisco-rv-series-rce_1.yaml
-./poc/remote_code_execution/cisco-webex-log4j-rce.yaml
 ./poc/remote_code_execution/cities-shipping-zones-for-woocommerce.yaml
 ./poc/remote_code_execution/cities_shipping_zones_for_woocommerce-a1ffb318-41b4-4b31-b170-387c368ae686.yaml
 ./poc/remote_code_execution/citrix-xenapp-log4j-rce.yaml
@@ -257986,7 +257997,6 @@
 ./poc/remote_code_execution/ct-commerce-a2188596f122230f01e9a86b2d3c4928.yaml
 ./poc/remote_code_execution/ct-commerce_1.yaml
 ./poc/remote_code_execution/ct_commerce-399109be-7efe-428e-a9b8-7a68864b2790.yaml
-./poc/remote_code_execution/ctt-expresso-para-woocommerce_1.yaml
 ./poc/remote_code_execution/currency-exchange-for-woocommerce-055e1820b3e7ef430034aac2fbd3cb4b.yaml
 ./poc/remote_code_execution/currency-exchange-for-woocommerce.yaml
 ./poc/remote_code_execution/currency-per-product-for-woocommerce-d2bf877619d7d01c706b413ffca02437.yaml
@@ -258555,7 +258565,6 @@
 ./poc/remote_code_execution/esafenet-cdgserver3-cdgauthorisetempletservice1-rce.yaml
 ./poc/remote_code_execution/esafenet-cdgserver3-cdgrenewapplication-rce.yaml
 ./poc/remote_code_execution/esafenet-cdgserver3-checkclientservelt-rce.yaml
-./poc/remote_code_execution/esafenet-cdgserver3-clientloginweb-rce.yaml
 ./poc/remote_code_execution/esafenet-cdgserver3-clientmessage-rce.yaml
 ./poc/remote_code_execution/esafenet-cdgserver3-createdocservice1-rce.yaml
 ./poc/remote_code_execution/esafenet-cdgserver3-decrypermissapp-rce.yaml
@@ -259033,9 +259042,6 @@
 ./poc/remote_code_execution/ibtana-ecommerce-product-addons.yaml
 ./poc/remote_code_execution/ibtana_ecommerce_product_addons-6a906f90-fac2-43cf-8f67-99f8862dc636.yaml
 ./poc/remote_code_execution/ibtana_ecommerce_product_addons-831d9e4d-21b4-45db-83f8-e8b220c6c44b.yaml
-./poc/remote_code_execution/icewarp-webclient-basic-rce.yaml
-./poc/remote_code_execution/icewarp-webclient-rce-8130.yaml
-./poc/remote_code_execution/icewarp-webclient-rce.yaml
 ./poc/remote_code_execution/icewarprce-220331-222842.yaml
 ./poc/remote_code_execution/idocview-cmd-rce.yaml
 ./poc/remote_code_execution/image-source-control-isc-1f038aef0dcbd62c1999c43ff0e6ea69.yaml
@@ -259612,7 +259618,6 @@
 ./poc/remote_code_execution/no-captcha-recaptcha-for-woocommerce.yaml
 ./poc/remote_code_execution/no_captcha_recaptcha_for_woocommerce-9bcc1965-c409-40ba-a942-175646ad8fda.yaml
 ./poc/remote_code_execution/no_captcha_recaptcha_for_woocommerce-efc53d78-a664-48d0-a752-00c56b3f792f.yaml
-./poc/remote_code_execution/nodejs-rce.yaml
 ./poc/remote_code_execution/non-random-source.yaml
 ./poc/remote_code_execution/nopcommerce-installer.yaml
 ./poc/remote_code_execution/nopcommerce-installer_1.yaml
@@ -261220,7 +261225,6 @@
 ./poc/remote_code_execution/weaver-emobile-client-do-rce.yaml
 ./poc/remote_code_execution/weaver-oa-rce.yaml
 ./poc/remote_code_execution/weaver_e_mobile_6_rce_1.yaml
-./poc/remote_code_execution/webappick-product-feed-for-woocommerce-ef466bbf7b36c7f4169533ec1161bc46.yaml
 ./poc/remote_code_execution/webpack-sourcemap.yaml
 ./poc/remote_code_execution/weight-based-shipping-for-woocommerce-03810ee843c54e70aa66a159f989ab60.yaml
 ./poc/remote_code_execution/weight_based_shipping_for_woocommerce-b5086b8d-6c74-4970-9937-5ddc5b528495.yaml
@@ -261671,7 +261675,6 @@
 ./poc/remote_code_execution/woocommerce-gateway-eway_1.yaml
 ./poc/remote_code_execution/woocommerce-gateway-gocardless-20969827fa75bc0f281e27768458a4ac.yaml
 ./poc/remote_code_execution/woocommerce-gateway-nab-dp-fb3e0b35fd834a40fbd2513e531809fd.yaml
-./poc/remote_code_execution/woocommerce-gateway-paypal-express-checkout_1.yaml
 ./poc/remote_code_execution/woocommerce-gateway-stripe-04846b1c5652a3da4ce4c294b8e9fbf7.yaml
 ./poc/remote_code_execution/woocommerce-gateway-stripe-07a525d448e53f3b0235fa022459120a.yaml
 ./poc/remote_code_execution/woocommerce-gateway-stripe-0b1676c6b0c536cb7acdcc854a24ab44.yaml
@@ -262525,7 +262528,6 @@
 ./poc/remote_code_execution/wordpress-rce-simplefilelist.yaml
 ./poc/remote_code_execution/wordpress-simplefilelist-rce.yaml
 ./poc/remote_code_execution/wordpress-source-code-disclosure.yaml
-./poc/remote_code_execution/wordpress-woocommerce-gateway-paypal-express-checkout.yaml
 ./poc/remote_code_execution/wordpress-woocommerce-gateway-stripe.yaml
 ./poc/remote_code_execution/wordpress-woocommerce-legacy-rest-api.yaml
 ./poc/remote_code_execution/wordpress-woocommerce-listing-11338.yaml
@@ -262805,7 +262807,6 @@
 ./poc/remote_code_execution/yith-essential-kit-for-woocommerce-1-a472e8d344476ac1fe5c7a6c4cbb802f.yaml
 ./poc/remote_code_execution/yith-essential-kit-for-woocommerce-1-b65447b94a90a33a2541e0ce0c9fe623.yaml
 ./poc/remote_code_execution/yith-essential-kit-for-woocommerce-1-bc666a1187a1a3b8c387dd03cf131ecb.yaml
-./poc/remote_code_execution/yith-paypal-express-checkout-for-woocommerce-959b1069d80fdc3a44260ad71185acf0.yaml
 ./poc/remote_code_execution/yith-paypal-payments-for-woocommerce-2b9f2a0bb6fbd2e964b66d810f6cd59a.yaml
 ./poc/remote_code_execution/yith-paypal-payments-for-woocommerce-a472e8d344476ac1fe5c7a6c4cbb802f.yaml
 ./poc/remote_code_execution/yith-paypal-payments-for-woocommerce-f5c3285c546d26859e884d10b1091900.yaml
@@ -285593,7 +285594,7 @@
 ./poc/upload/vesystem-fileupload.yaml
 ./poc/upload/vesystem-upload-file.yaml
 ./poc/upload/wanhu-ezOFFICE-upload-wpsservlet.yaml
-./poc/upload/wanhu-ezeip-ajaxupload-fileupload.yaml
+./poc/upload/wanhu-ezeip-ajaxupload-fileupload_1.yaml
 ./poc/upload/wanhu-ezoffice-defaultroot-officeserverservlet-fileupload.yaml
 ./poc/upload/wanhu-ezoffice-fileupload-controller-fileupload.yaml
 ./poc/upload/wanhu-ezoffice-officeserver-fileupload.yaml
@@ -286062,6 +286063,7 @@
 ./poc/web/CVE-2019-15781-facebook_by_weblizar-5c5b6501-23c5-401b-815d-1729594e6a59.yaml
 ./poc/web/CVE-2019-15827-onesignal_free_web_push_notifications-a913ca7e-8f61-4615-b7fb-863b111fe22e.yaml
 ./poc/web/CVE-2019-15834-webp_converter_for_media-5cbb8495-70e0-48cc-84d9-6d3cf3ec5355.yaml
+./poc/web/CVE-2019-15837-webp_express-3b7108fc-0eb2-4f9f-b747-3b83c57a1b53.yaml
 ./poc/web/CVE-2019-17213-webarx-f8534891-2269-4afe-b83f-df512ca36456.yaml
 ./poc/web/CVE-2019-17214-webarx-504fca80-7e81-412b-891f-2679451ff6e6.yaml
 ./poc/web/CVE-2020-5642-onwebchat-b17d1280-2bae-4c45-b2e1-fbfcb2c7c15b.yaml
@@ -286261,6 +286263,7 @@
 ./poc/web/CVE-2025-0990-gloria_assistant_by_webtronic_labs-33fd44dc-b4f8-4429-8dcd-5161602bb318.yaml
 ./poc/web/CVE-2025-10045-onoffice_for_wp_websites-259010bd-ccb4-4907-bea8-f49e6464eaa1.yaml
 ./poc/web/CVE-2025-10129-wp_webcam_widget_shortcode-edc4875e-3eca-4c25-a65c-93182912cd24.yaml
+./poc/web/CVE-2025-11379-webp_express-c28479bf-768a-4ab4-8e74-ad367b9b744f.yaml
 ./poc/web/CVE-2025-11760-eroom_zoom_meetings_webinar-0baaa6b7-3884-465e-bae3-46edab6312d4.yaml
 ./poc/web/CVE-2025-12032-zweb_social_mobile-26d12c52-d08f-4a6c-ba59-0e26dfb33ae5.yaml
 ./poc/web/CVE-2025-12165-webcake-3bdeb2a1-ab97-45ff-808e-37e631d5e9cf.yaml
@@ -286661,6 +286664,7 @@
 ./poc/web/chatgpt-web-unauth_2.yaml
 ./poc/web/chatgpt_web.yaml
 ./poc/web/chinatelecomequipmentwebconfigurationsystem.yaml
+./poc/web/cisco-webex-log4j-rce.yaml
 ./poc/web/cisco-webex-log4j-rce_1.yaml
 ./poc/web/cisco-webex-log4j-rce_2.yaml
 ./poc/web/cisco-webex-meetings-detect.yaml
@@ -286868,6 +286872,7 @@
 ./poc/web/eroom_zoom_meetings_webinar-67b7c2b5-c8ef-4659-b9e8-4c695bb76bff.yaml
 ./poc/web/eroom_zoom_meetings_webinar-89a23d5a-7728-403e-b654-595d92c20b66.yaml
 ./poc/web/eroom_zoom_meetings_webinar-ce695f15-557c-47b1-a5c4-ce68cc84d721.yaml
+./poc/web/esafenet-cdgserver3-clientloginweb-rce.yaml
 ./poc/web/eshop_-_ecommerce_-_store_website.yaml
 ./poc/web/espec-web-controller-panel.yaml
 ./poc/web/espec-web-controller-panel_1.yaml
@@ -287098,6 +287103,7 @@
 ./poc/web/huawei-vpn-umweb-fileread.yaml
 ./poc/web/ibm-mqseries-web-console-8109.yaml
 ./poc/web/ibm-mqseries-web-console.yaml
+./poc/web/ibm-web-traffic-express-caching-proxy.yaml
 ./poc/web/ibm-webmethods-panel.yaml
 ./poc/web/ibm-webseal.yaml
 ./poc/web/ibm-websphere-admin-panel.yaml
@@ -287108,11 +287114,14 @@
 ./poc/web/ibm-websphere-ssrf.yaml
 ./poc/web/ibm-websphere-xml.yaml
 ./poc/web/ibm-websphere.yaml
+./poc/web/icewarp-webclient-basic-rce.yaml
 ./poc/web/icewarp-webclient-rce-8129.yaml
 ./poc/web/icewarp-webclient-rce-8129_1.yaml
+./poc/web/icewarp-webclient-rce-8130.yaml
 ./poc/web/icewarp-webclient-rce-8131_1.yaml
 ./poc/web/icewarp-webclient-rce-8132.yaml
 ./poc/web/icewarp-webclient-rce-8133.yaml
+./poc/web/icewarp-webclient-rce.yaml
 ./poc/web/icewarp-webclient-rce_1.yaml
 ./poc/web/icinga-web-login-8134.yaml
 ./poc/web/icinga-web-login-8134_1.yaml
@@ -287278,6 +287287,7 @@
 ./poc/web/mingyuanyun-erp-visitorweb-xmlhttp-sqli.yaml
 ./poc/web/mingyuanyun-erp-vistorweb-xmlhttp-sqli.yaml
 ./poc/web/mochiweb-detect.yaml
+./poc/web/mongo-express-web-gui.yaml
 ./poc/web/ms-exchange-web-service.yaml
 ./poc/web/ms-exchange-web-service_1.yaml
 ./poc/web/mu-yun-webvpn.yaml
@@ -287793,9 +287803,6 @@
 ./poc/web/web-file-manager.yaml
 ./poc/web/web-file-manager_1.yaml
 ./poc/web/web-framework-detect.yaml
-./poc/web/web-ftp-detect-11136.yaml
-./poc/web/web-ftp-detect-11137.yaml
-./poc/web/web-ftp-detect-11138.yaml
 ./poc/web/web-ftp-detect.yaml
 ./poc/web/web-inf-disclosure.yaml
 ./poc/web/web-inf-web-xml-disclosure.yaml
@@ -287896,6 +287903,7 @@
 ./poc/web/webappick-pdf-invoice-for-woocommerce-b932cf49193b68544dd331806ee14267.yaml
 ./poc/web/webappick-pdf-invoice-for-woocommerce.yaml
 ./poc/web/webappick-product-feed-for-woocommerce-7e4233b2e0e782d0cb3ede7031cdfd5c.yaml
+./poc/web/webappick-product-feed-for-woocommerce-ef466bbf7b36c7f4169533ec1161bc46.yaml
 ./poc/web/webappick_pdf_invoice_for_woocommerce-84003388-c47c-41db-8d2d-4643aa375a89.yaml
 ./poc/web/webappick_pdf_invoice_for_woocommerce-bfeb5a08-4aad-421b-9e50-68dd84adc396.yaml
 ./poc/web/webappick_pdf_invoice_for_woocommerce-e869800a-6fbc-4a1a-97fd-92ecbf3305ff.yaml
@@ -288247,7 +288255,9 @@
 ./poc/web/webp-converter-for-media_2.yaml
 ./poc/web/webp-coverter-open-redirect.yaml
 ./poc/web/webp-express-1fbe9279dc139e40de171678cc908922.yaml
+./poc/web/webp-express-802342a8791d6bf81a3a97aaebbba8bf.yaml
 ./poc/web/webp-express.yaml
+./poc/web/webp-express_2.yaml
 ./poc/web/webp-express_4.yaml
 ./poc/web/webp-server-go-lfi.yaml
 ./poc/web/webp-server-go-lfi_1.yaml
@@ -288498,7 +288508,6 @@
 ./poc/web/wp_webinarsystem-e58fa0b6-22f3-4e56-96f8-d1085498a1ac.yaml
 ./poc/web/wp_webinarsystem-f1c2cb3f-2f9e-40c5-9e5f-5b85a53e5868.yaml
 ./poc/web/wp_website_creator-4f01eb23-af49-4f1e-a5c7-1932a4119e6b.yaml
-./poc/web/ws_ftp-server-web-transfer.yaml
 ./poc/web/xelion_webchat-250202d5-3a0d-494c-8386-1f4cd015ad7e.yaml
 ./poc/web/xelion_webchat-a743a2c5-61ba-43d4-bbc3-0f82969be78f.yaml
 ./poc/web/xerox-d95-copier-webserver.yaml
@@ -290635,6 +290644,7 @@
 ./poc/wordpress/real-estate-listing-realtyna-wpl-51ddc21c56aeaae7a80c3f0f12d9836d.yaml
 ./poc/wordpress/real-estate-listing-realtyna-wpl-b5ea618e55cce4a46b2bff3603f967e7.yaml
 ./poc/wordpress/real-estate-listing-realtyna-wpl-f6a88f0b9b916f8e5f7f55275d656e2c.yaml
+./poc/wordpress/real-estate-listing-realtyna-wpl.yaml
 ./poc/wordpress/real_estate_listing_realtyna_wpl-23068a98-623d-4eb3-a7c5-6af410de4320.yaml
 ./poc/wordpress/real_estate_listing_realtyna_wpl-2d6cbfc8-1ced-4757-b090-39add17afc77.yaml
 ./poc/wordpress/real_estate_listing_realtyna_wpl-4a64f840-8570-4f98-8b72-27bee1607fc2.yaml
