@@ -9590,6 +9590,7 @@
 ./poc/auth/password_protect_page-ac6f78a9-8fb0-4ea0-b02e-a0748723dca8.yaml
 ./poc/auth/password_protect_page-ac6f78a9-8fb0-4ea0-b02e-a0748723dca8_1.yaml
 ./poc/auth/password_protect_page-b1850e16-6fac-4d72-9346-ea6280fe84d0.yaml
+./poc/auth/password_protect_page-b8f53282-740e-4ac3-a2e1-7a97893e3355.yaml
 ./poc/auth/password_protect_page-c0f899c6-cce2-4534-9b97-3783648cba09.yaml
 ./poc/auth/password_protect_page-d1e041f0-3019-4d1f-b1a3-b40275c0966a.yaml
 ./poc/auth/password_protect_page-d9ac0d84-dff4-4a03-a530-cac47ffaf2bb.yaml
@@ -139290,6 +139291,7 @@
 ./poc/cve/CVE-2026-0548-tutor-0e475e02-494a-4ad0-a83c-d027c3a32989.yaml
 ./poc/cve/CVE-2026-0549-groups-75000e67-7914-43af-be1d-82990ada5129.yaml
 ./poc/cve/CVE-2026-0550-mycred-ce5a89bc-c230-41d7-b0a7-d19d7b22ffb2.yaml
+./poc/cve/CVE-2026-0551-password_protect_page-b8f53282-740e-4ac3-a2e1-7a97893e3355.yaml
 ./poc/cve/CVE-2026-0552-wordpress_simple_paypal_shopping_cart-a8e222d1-cb03-4498-9776-e050eb501e9f.yaml
 ./poc/cve/CVE-2026-0556-xo_event_calendar-6bf0eef5-9276-4367-8451-017c509e443d.yaml
 ./poc/cve/CVE-2026-0560.yaml
@@ -140300,6 +140302,7 @@
 ./poc/cve/CVE-2026-16144-kali_forms-9d692aff-8bb2-45bb-9caf-bc33d3ed5b10.yaml
 ./poc/cve/CVE-2026-16145-gdpr_compliant_recaptcha_for_all_forms-ff1d2bd8-cc46-4763-8ba7-832b982ff56a.yaml
 ./poc/cve/CVE-2026-16146-gdpr_compliant_recaptcha_for_all_forms-9a68e2ab-fe2f-43f8-bb1b-b46a483bd06f.yaml
+./poc/cve/CVE-2026-16149-security_hardener-64f1a71f-e210-4191-bfb4-56f8568180ed.yaml
 ./poc/cve/CVE-2026-1620-addons_for_elementor-2483875a-84de-4a40-a69e-aee68da1ce3b.yaml
 ./poc/cve/CVE-2026-16230-formidable_signature-c9a5f8ca-7efc-401b-8a93-07fbe7204dce.yaml
 ./poc/cve/CVE-2026-16232_1.yaml
@@ -153851,7 +153854,6 @@
 ./poc/ftp/myftp-ftp-like-plugin-for-wordpress-plugin-d41d8cd98f00b204e9800998ecf8427e_1.yaml
 ./poc/ftp/myftp-ftp-like-plugin-for-wordpress.yaml
 ./poc/ftp/myftp_ftp_like_plugin_for_wordpress-05a81b0e-2d25-44b5-b791-5b2aed94bbab.yaml
-./poc/ftp/mywebftp.yaml
 ./poc/ftp/ncftpd-detect.yaml
 ./poc/ftp/ncftpd-detect_1.yaml
 ./poc/ftp/net2ftp.yaml
@@ -229456,6 +229458,7 @@
 ./poc/other/security.txt_4.yaml
 ./poc/other/security_antivirus_firewall-cd177a43-6059-4125-9408-1090b9a54117.yaml
 ./poc/other/security_event_manager.yaml
+./poc/other/security_hardener-64f1a71f-e210-4191-bfb4-56f8568180ed.yaml
 ./poc/other/security_malware_firewall-0fb9b039-eb04-4c27-89eb-1932c9c31962.yaml
 ./poc/other/security_malware_firewall-1e35eb83-716e-4177-99ba-24a884725265.yaml
 ./poc/other/security_malware_firewall-2187311d-6651-4eca-806d-aa2ff9fae4e2.yaml
@@ -248635,6 +248638,7 @@
 ./poc/remote_code_execution/CVE-2026-17012-restore_paypal_standard_for_woocommerce-acb5b0e2-7a12-4c7e-b316-b03ae9b605fc.yaml
 ./poc/remote_code_execution/CVE-2026-1710-woocommerce_payments-cec13225-baa3-4f26-b2d2-af6106888c74.yaml
 ./poc/remote_code_execution/CVE-2026-17581-woocommerce_pos-cf3efda0-8609-4a75-a00b-735b49ef260b.yaml
+./poc/remote_code_execution/CVE-2026-18027-print_invoices_packing_slip_labels_for_woocommerce-a46f270f-d9cb-4bc1-8e10-3fc6646e1d78.yaml
 ./poc/remote_code_execution/CVE-2026-18391-woocommerce_subscriptions-adb4d326-7089-4292-bf0a-4a21e6928a2d.yaml
 ./poc/remote_code_execution/CVE-2026-18470-easy_login_woocommerce-ae1161f4-89a0-45c7-ab7f-7255673e63cd.yaml
 ./poc/remote_code_execution/CVE-2026-18603-cancel_order_request_woocommerce-72b6c411-36f5-4104-b5f3-3b92915ad54a.yaml
@@ -251903,6 +251907,7 @@
 ./poc/remote_code_execution/print_invoices_packing_slip_labels_for_woocommerce-5fdb8e77-1323-43a0-a012-04d983390de1.yaml
 ./poc/remote_code_execution/print_invoices_packing_slip_labels_for_woocommerce-7927edf2-b092-4b56-83aa-038f99ea658e.yaml
 ./poc/remote_code_execution/print_invoices_packing_slip_labels_for_woocommerce-8bb34d74-4d13-4e7a-b78d-5691eb778401.yaml
+./poc/remote_code_execution/print_invoices_packing_slip_labels_for_woocommerce-a46f270f-d9cb-4bc1-8e10-3fc6646e1d78.yaml
 ./poc/remote_code_execution/print_invoices_packing_slip_labels_for_woocommerce-aeac9c4a-0754-4fb1-bf11-0cd8483451b6.yaml
 ./poc/remote_code_execution/print_invoices_packing_slip_labels_for_woocommerce-c29b9cb5-fd47-47d6-a341-a4b5ca0683f1.yaml
 ./poc/remote_code_execution/print_invoices_packing_slip_labels_for_woocommerce-c7ba4218-5b60-4e72-b98d-7c95c9fc3d59.yaml
@@ -255376,7 +255381,7 @@
 ./poc/sap/wp_whatsapp-3bba2901-55a7-4ef1-ab3c-1415aa99c729.yaml
 ./poc/sap/wp_whatsapp-73232bff-b11a-4580-8cde-5bf085ba749c.yaml
 ./poc/sap/wp_whatsapp-85a94f32-e1e5-48ea-822e-c54d0592da28.yaml
-./poc/sap/wp_whatsapp-cc7689ea-3e7b-4367-872d-fa036a29f842_1.yaml
+./poc/sap/wp_whatsapp-cc7689ea-3e7b-4367-872d-fa036a29f842.yaml
 ./poc/sap/wp_whatsapp_chat-bff16371-51a9-44c9-ba6f-3680f84b880a.yaml
 ./poc/sap/wpt_whatsapp-7dd7542a-357e-4a0f-879d-794b3451668e.yaml
 ./poc/sap/yournewsapp-9169931c-a679-4801-b33b-08c4f464dc43.yaml
@@ -278562,6 +278567,7 @@
 ./poc/web/mywebcounter-plugin_1.yaml
 ./poc/web/mywebcounter.yaml
 ./poc/web/mywebcounter_1.yaml
+./poc/web/mywebftp.yaml
 ./poc/web/mywebsql.yaml
 ./poc/web/mywebtonet_performancestats-aee08b01-ca5d-464d-94ed-66a05261670d.yaml
 ./poc/web/netsurveillance-web-9057.yaml
