@@ -142607,6 +142607,7 @@
 ./poc/cve/CVE-2026-4090-inquiry_cart-772e9b2b-b2d5-4950-804b-d0914004710c.yaml
 ./poc/cve/CVE-2026-4091-open_brain-93df6480-9bb1-4f5d-bb39-ff1a01d739cf.yaml
 ./poc/cve/CVE-2026-4100-paid_memberships_pro-5b333a3d-e416-42aa-9722-5406df0a64b3.yaml
+./poc/cve/CVE-2026-41042.yaml
 ./poc/cve/CVE-2026-4106-ht_mega_for_elementor-e533f20e-825b-443c-93b2-cf451284ae96.yaml
 ./poc/cve/CVE-2026-4106.yaml
 ./poc/cve/CVE-2026-4106_1.yaml
@@ -153854,6 +153855,7 @@
 ./poc/ftp/myftp-ftp-like-plugin-for-wordpress-plugin-d41d8cd98f00b204e9800998ecf8427e_1.yaml
 ./poc/ftp/myftp-ftp-like-plugin-for-wordpress.yaml
 ./poc/ftp/myftp_ftp_like_plugin_for_wordpress-05a81b0e-2d25-44b5-b791-5b2aed94bbab.yaml
+./poc/ftp/mywebftp.yaml
 ./poc/ftp/ncftpd-detect.yaml
 ./poc/ftp/ncftpd-detect_1.yaml
 ./poc/ftp/net2ftp.yaml
@@ -154045,10 +154047,6 @@
 ./poc/ftp/wanhuOA-download-ftp.yaml
 ./poc/ftp/wd-nas-ftp-download-rce.yaml
 ./poc/ftp/web-ftp-detect-11135.yaml
-./poc/ftp/web-ftp-detect-11136.yaml
-./poc/ftp/web-ftp-detect-11137.yaml
-./poc/ftp/web-ftp-detect-11138.yaml
-./poc/ftp/web-ftp-detect.yaml
 ./poc/ftp/wftpserver.yaml
 ./poc/ftp/windriver-ftp-detect.yaml
 ./poc/ftp/windriver-ftp-detect_1.yaml
@@ -154842,7 +154840,7 @@
 ./poc/google/advanced_google_universal_analytics-7b67f7e4-d431-4185-9509-217f6e22c98b_1.yaml
 ./poc/google/affiliates-manager-google-recaptcha-integration.yaml
 ./poc/google/ap-google-maps.yaml
-./poc/google/ap_google_maps-8b12777d-36ab-4ced-9050-b2ce11b23625_1.yaml
+./poc/google/ap_google_maps-8b12777d-36ab-4ced-9050-b2ce11b23625.yaml
 ./poc/google/basic_google_maps_placemarks-b8a2bbfe-eb87-4e26-ba20-bc406d681124.yaml
 ./poc/google/bot_block_stop_spam_google_analytics_referrals-219f732e-abd8-463c-a43e-f92371356e3d_1.yaml
 ./poc/google/bws-google-analytics-aa49fc6c3fa126497daa1dd4b67e61cd.yaml
@@ -154918,7 +154916,7 @@
 ./poc/google/embed-google-map.yaml
 ./poc/google/embed-google-photos-album-easily-1978e15d164b7f3f275d85a3dccc33c4.yaml
 ./poc/google/embed-google-photos-album-easily_1.yaml
-./poc/google/embed_google_fonts-ec6ea6e7-9c43-4b58-a1df-947a3aa7cd54_1.yaml
+./poc/google/embed_google_fonts-ec6ea6e7-9c43-4b58-a1df-947a3aa7cd54.yaml
 ./poc/google/embed_google_map-14b45907-2602-40b4-a497-9c1d4823c386_1.yaml
 ./poc/google/embed_google_photos_album_easily-13bdd763-8785-4441-8798-5bcc906cb9b4.yaml
 ./poc/google/embed_google_photos_album_easily-2a090167-0ea9-47f9-be8f-fe392da9ec38_1.yaml
@@ -166583,7 +166581,7 @@
 ./poc/other/191218699_1.yaml
 ./poc/other/1912527454_1.yaml
 ./poc/other/1912527454_2.yaml
-./poc/other/1913107877_2.yaml
+./poc/other/1913107877_1.yaml
 ./poc/other/1913604982.yaml
 ./poc/other/1913930949.yaml
 ./poc/other/1914402596.yaml
@@ -212314,6 +212312,7 @@
 ./poc/other/kopatheme-aa16ab9f-4fb1-43de-bfbb-bd6caf6a68dc.yaml
 ./poc/other/kopatheme-aecf92ba128e924b74430328c78b4a69.yaml
 ./poc/other/kopatheme.yaml
+./poc/other/kopia.yaml
 ./poc/other/korea-sns-d2347b23afcb3c3e5e83785525a060c3.yaml
 ./poc/other/korea-sns.yaml
 ./poc/other/korea_sns-185d380e-7e23-4260-bdeb-e88c8625f690.yaml
@@ -278567,7 +278566,6 @@
 ./poc/web/mywebcounter-plugin_1.yaml
 ./poc/web/mywebcounter.yaml
 ./poc/web/mywebcounter_1.yaml
-./poc/web/mywebftp.yaml
 ./poc/web/mywebsql.yaml
 ./poc/web/mywebtonet_performancestats-aee08b01-ca5d-464d-94ed-66a05261670d.yaml
 ./poc/web/netsurveillance-web-9057.yaml
@@ -279065,6 +279063,10 @@
 ./poc/web/web-file-manager.yaml
 ./poc/web/web-framework-detect.yaml
 ./poc/web/web-framework-detect_2.yaml
+./poc/web/web-ftp-detect-11136.yaml
+./poc/web/web-ftp-detect-11137.yaml
+./poc/web/web-ftp-detect-11138.yaml
+./poc/web/web-ftp-detect.yaml
 ./poc/web/web-inf-disclosure.yaml
 ./poc/web/web-inf-web-xml-disclosure.yaml
 ./poc/web/web-instant-messenger-4ae688b6df13f1343923a0c3f1daa933.yaml
