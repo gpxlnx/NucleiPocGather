@@ -138,7 +138,7 @@ Agendamento diário às 09:00:
 ## Estatísticas da coleção
 
 <!-- stats:start -->
-> **Atualização dos POCs do projeto:** `2026-08-30 16:39`
+> **Atualização dos POCs do projeto:** `2026-08-31 19:25`
 
 | ID | Tag | Quantidade | Diretório | Quantidade | Severidade | Quantidade |
 |:---|:----|-----------:|:----------|-----------:|:-----------|-----------:|
@@ -149,7 +149,7 @@ Agendamento diário às 09:00:
 | 5 | low | 31576 | auth | 4596 | critical | 15112 |
 | 6 | medium | 30794 | remote_code_execution | 3929 | unknown | 140 |
 | 7 | tech | 17552 | detect | 1969 | informative | 17 |
-| 8 | detect | 16657 | web | 1444 | hight | 15 |
+| 8 | detect | 16657 | web | 1445 | hight | 15 |
 | 9 | high | 16550 | microsoft | 1297 | meduim | 9 |
 | 10 | service | 13833 | api | 1145 | cretical | 4 |
 
