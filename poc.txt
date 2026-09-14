@@ -161135,7 +161135,7 @@
 ./poc/drupal/drupal_module-browser_back_button-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-browser_back_button-cross-site-scripting_2.yaml
 ./poc/drupal/drupal_module-bugsnag-unsupported_1.yaml
-./poc/drupal/drupal_module-business_responsive_theme-unsupported_1.yaml
+./poc/drupal/drupal_module-business_responsive_theme-unsupported.yaml
 ./poc/drupal/drupal_module-business_responsive_theme-unsupported_2.yaml
 ./poc/drupal/drupal_module-business_responsive_theme-unsupported_3.yaml
 ./poc/drupal/drupal_module-civicccookiecontrol-cross-site-scripting.yaml
@@ -161457,7 +161457,7 @@
 ./poc/drupal/drupal_module-oauth_server_sso-sql-injection_1.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting_1.yaml
-./poc/drupal/drupal_module-office_hours-cross-site-scripting.yaml
+./poc/drupal/drupal_module-office_hours-cross-site-scripting_1.yaml
 ./poc/drupal/drupal_module-office_hours-cross-site-scripting_2.yaml
 ./poc/drupal/drupal_module-office_hours-cross-site-scripting_3.yaml
 ./poc/drupal/drupal_module-ohdear_integration-access-bypass.yaml
@@ -161565,7 +161565,7 @@
 ./poc/drupal/drupal_module-role_delegation-privilege-escalation_2.yaml
 ./poc/drupal/drupal_module-role_delegation-privilege-escalation_3.yaml
 ./poc/drupal/drupal_module-s3fs-access-bypass.yaml
-./poc/drupal/drupal_module-s3fs-access-bypass_2.yaml
+./poc/drupal/drupal_module-s3fs-access-bypass_2_1.yaml
 ./poc/drupal/drupal_module-s3fs-access-bypass_3.yaml
 ./poc/drupal/drupal_module-safedelete-access-bypass.yaml
 ./poc/drupal/drupal_module-safedelete-access-bypass_2.yaml
@@ -161653,7 +161653,7 @@
 ./poc/drupal/drupal_module-tarte_au_citron-cross-site-scripting_2.yaml
 ./poc/drupal/drupal_module-taxonomy_access_fix-access-bypass.yaml
 ./poc/drupal/drupal_module-taxonomy_access_fix-access-bypass_2.yaml
-./poc/drupal/drupal_module-taxonomy_manager-access-bypass_1.yaml
+./poc/drupal/drupal_module-taxonomy_manager-access-bypass.yaml
 ./poc/drupal/drupal_module-taxonomy_manager-access-bypass_2.yaml
 ./poc/drupal/drupal_module-taxonomy_manager-access-bypass_3.yaml
 ./poc/drupal/drupal_module-tb_megamenu-access-bypass.yaml
@@ -161700,7 +161700,7 @@
 ./poc/drupal/drupal_module-views-information-disclosure.yaml
 ./poc/drupal/drupal_module-views_bulk_operations-access-bypass.yaml
 ./poc/drupal/drupal_module-views_bulk_operations-access-bypass_2.yaml
-./poc/drupal/drupal_module-views_svg_animation-cross-site-scripting_1.yaml
+./poc/drupal/drupal_module-views_svg_animation-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-vppr-access-bypass.yaml
 ./poc/drupal/drupal_module-vppr-unsupported.yaml
 ./poc/drupal/drupal_module-vppr-unsupported_2.yaml
@@ -161710,7 +161710,7 @@
 ./poc/drupal/drupal_module-webform-multiple-vulnerabilities.yaml
 ./poc/drupal/drupal_module-webform-remote-code-execution.yaml
 ./poc/drupal/drupal_module-webprofiler-cross-site-scripting.yaml
-./poc/drupal/drupal_module-wingsuit_companion-access-bypass.yaml
+./poc/drupal/drupal_module-wingsuit_companion-access-bypass_1.yaml
 ./poc/drupal/drupal_module-workbench_moderation-access-bypass.yaml
 ./poc/drupal/drupal_module-workbench_moderation-access-bypass_2.yaml
 ./poc/drupal/drupal_module-workflow-cross-site-scripting.yaml
