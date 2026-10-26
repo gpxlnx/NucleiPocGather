@@ -5,31 +5,38 @@ info:
   author: darses
   severity: info
   description: |
-    Detects the use of TOPdesk, a web-based IT service management (ITSM) and helpdesk platform. Identification is based on unique page titles, HTML patterns.
+    Detect TOPdesk and extract timestamp from static files. This template does not detect the 404 error page by "TOPDesk ApplicationServer".
   metadata:
     verified: true
     max-requests: 1
-    shodan-query: html:"TOPdesk"
-    fofa-query: app="TOPdesk"
-  tags: topdesk,tech,detect,discovery
+    shodan-query:
+      - http.favicon.hash:-1177777311
+      - http.favicon.hash:589927604
+      - http.favicon.hash:1123106483
+      - http.favicon.hash:1431756848
+    fofa-query:
+      - icon_hash="-1177777311"
+      - icon_hash="589927604"
+      - icon_hash="1123106483"
+      - icon_hash="1431756848"
+    vendor: TOPDesk
+  tags: tech,detect,topdesk
 
 http:
   - method: GET
     path:
       - "{{BaseURL}}"
 
-    matchers-condition: and
     matchers:
-      - type: word
-        part: body
-        words:
-          - 'href="/tas/'
-          - "topdeskidploginforwardurl"
-        condition: or
-
       - type: status
         status:
           - 200
+
+      - type: word
+        part: body
+        words:
+          - "href=\"/tas/"
+          - "topdeskidploginforwardurl"
 
     extractors:
       - type: regex
@@ -41,6 +48,6 @@ http:
         internal: true
 
       - type: dsl
+        name: extracted_date
         dsl:
-          - '"Release date: " + date_time("%Y-%M-%D", extracted_unix_timestamp)'
-# digest: 4a0a00473045022100e9539d96985a5fb4f167627dd714e4bc109a79cfd90a18e98b7d8638c3bc2ae7022025609dcec3cc79dc7f7d7d26504b50e092e4b0db253d9fa69a23ba6a93dc07d2:922c64590222798bb761d5b6d8e72950
+          - "date_time('%Y-%M-%D', extracted_unix_timestamp)"
