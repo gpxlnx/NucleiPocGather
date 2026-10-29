@@ -12,14 +12,11 @@ info:
     cvss-score: 10
     cve-id: CVE-2021-44228
     cwe-id: CWE-502
-    cpe: cpe:2.3:a:citrix:xenmobile_server:*:*:*:*:*:*:*:*
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: title:"XenMobile"
-    product: xenmobile_server
-    vendor: citrix
-  tags: cve,cve2021,rce,jndi,log4j,xenmobile,oast,kev
+  tags: cve,cve2021,rce,jndi,log4j,xenmobile,oast
 variables:
   rand1: '{{rand_int(111, 999)}}'
   rand2: '{{rand_int(111, 999)}}'
@@ -41,34 +38,33 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
-        words:
-          - '<h1>500 Server Internal Error'
-
-      - type: word
         part: interactsh_protocol # Confirms the DNS Interaction
         words:
           - "dns"
 
+      - type: word
+        part: body
+        words:
+          - '<h1>500 Server Internal Error'
+
       - type: regex
         part: interactsh_request
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'
+          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
 
     extractors:
       - type: kval
         kval:
-          - interactsh_ip
+          - interactsh_ip # Print remote interaction IP in output
 
       - type: regex
-        part: interactsh_request
         group: 2
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'
+          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print injection point in output
+        part: interactsh_request
 
       - type: regex
-        part: interactsh_request
         group: 1
         regex:
-          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'
-# digest: 4a0a0047304502200fa3d36b1d77f3c51349160bcba694f8753e2203c15fc7c641d111c014293875022100bdbb1fd82d4ddc298ebe7eebfc962ef325a351ef797758c43d8278eb70b30d26:922c64590222798bb761d5b6d8e72950
+          - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Print extracted ${:-{{rand1}}}${:-{{rand2}}}.${hostName} in output
+        part: interactsh_request
