@@ -1,15 +1,15 @@
-id: miniorange_login_with_eve_online_google_facebook-e8d7e8f3-e8ff-460f-a343-807bcdb865dc
+id: miniorange_login_with_eve_online_google_facebook-26e8a66a-c0ea-498f-8713-7edc299daef3
 
 info:
   name: >
-    OAuth Single Sign On – SSO (OAuth Client) <= 6.26.12 - Cross-Site Request Forgery
+    OAuth Single Sign On – SSO (OAuth Client) <= 7.0.0 - Missing Authorization
   author: topscoder
-  severity: medium
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/e8d7e8f3-e8ff-460f-a343-807bcdb865dc?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/26e8a66a-c0ea-498f-8713-7edc299daef3?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/miniorange-login-with-eve-online-google-facebook/"
     google-query: inurl:"/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/"
     shodan-query: 'http.html:"wp-content/plugins/miniorange-login-with-eve-online-google-facebook/"'
-  tags: cve,wordpress,wp-plugin,miniorange-login-with-eve-online-google-facebook,medium,candidate
+  tags: cve,wordpress,wp-plugin,miniorange-login-with-eve-online-google-facebook,high,candidate
 
 http:
   - method: GET
@@ -48,4 +48,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 6.26.12')
+          - compare_versions(version, '<= 7.0.0')
