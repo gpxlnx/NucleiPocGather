@@ -1,15 +1,15 @@
-id: fv_wordpress_flowplayer-0f3411f3-ca2f-407a-8af5-a6a350d67734
+id: fv_wordpress_flowplayer-ca0191be-df68-4b5f-85e6-40e962cc5de8
 
 info:
   name: >
-    FV Flowplayer Video Player <= 7.5.56.7212 - Authenticated (Shop Manager+) PHP Object Injection
+    FV Flowplayer Video Player <= 7.5.56.7212 - Unauthenticated Stored Cross-Site Scripting via Comment Content
   author: topscoder
-  severity: low
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0f3411f3-ca2f-407a-8af5-a6a350d67734?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/ca0191be-df68-4b5f-85e6-40e962cc5de8?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/fv-wordpress-flowplayer/"
     google-query: inurl:"/wp-content/plugins/fv-wordpress-flowplayer/"
     shodan-query: 'http.html:"wp-content/plugins/fv-wordpress-flowplayer/"'
-  tags: cve,wordpress,wp-plugin,fv-wordpress-flowplayer,low,candidate
+  tags: cve,wordpress,wp-plugin,fv-wordpress-flowplayer,high,candidate
 
 http:
   - method: GET

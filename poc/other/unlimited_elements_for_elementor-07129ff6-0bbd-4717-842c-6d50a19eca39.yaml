@@ -1,15 +1,15 @@
-id: unlimited_elements_for_elementor-c6de194f-cefb-4680-9d2a-baf84234a526
+id: unlimited_elements_for_elementor-07129ff6-0bbd-4717-842c-6d50a19eca39
 
 info:
   name: >
-    Unlimited Elements for Elementor <= 2.0.26 - Unauthenticated Stored Cross-Site Scripting
+    Unlimited Elements for Elementor <= 2.0.26 - Unauthenticated Stored Cross-Site Scripting via RSS Feed Widget
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/c6de194f-cefb-4680-9d2a-baf84234a526?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/07129ff6-0bbd-4717-842c-6d50a19eca39?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

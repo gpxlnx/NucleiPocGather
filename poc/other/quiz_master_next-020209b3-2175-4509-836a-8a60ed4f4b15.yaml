@@ -1,15 +1,15 @@
-id: quiz_master_next-60ed3820-0ef3-415c-a742-d4f9f42418a3
+id: quiz_master_next-020209b3-2175-4509-836a-8a60ed4f4b15
 
 info:
   name: >
-    Quiz and Survey Master (QSM) – Quiz Maker & Survey Maker <= 11.2.7 - Authenticated (Contributor+) PHP Object Injection
+    Quiz and Survey Master (QSM) <= 11.2.7 - Unauthenticated Arbitrary Shortcode Execution via 'qsm_unique_key' Parameter
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/60ed3820-0ef3-415c-a742-d4f9f42418a3?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/020209b3-2175-4509-836a-8a60ed4f4b15?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

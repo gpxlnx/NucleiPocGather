@@ -1,15 +1,15 @@
-id: wp_seopress-6651c932-aa60-485b-bb5b-b66d5a8963ae
+id: wp_seopress-10a13871-c98e-4785-ab41-18e548e07c05
 
 info:
   name: >
-    SEOPress <= 10.3 - Authenticated (Subscriber+) Stored Cross-Site Scripting via 'display_name' Profile Field via %%archive_title%% Template Tag
+    SEOPress <= 10.3 - Authenticated (Subscriber+) Stored Cross-Site Scripting via 'seopress_google_analytics_affiliate_tracking' and 'seopress_google_analytics_download_tracking' Parameters
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/6651c932-aa60-485b-bb5b-b66d5a8963ae?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/10a13871-c98e-4785-ab41-18e548e07c05?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

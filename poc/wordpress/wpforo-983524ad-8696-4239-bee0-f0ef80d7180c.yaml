@@ -1,31 +1,31 @@
-id: wp_members-2e842051-3820-4538-a359-ab4e1ed3822d
+id: wpforo-983524ad-8696-4239-bee0-f0ef80d7180c
 
 info:
   name: >
-    WP-Members Membership Plugin <= 3.5.7 - Missing Authorization
+    wpForo Forum <= 3.2.1 - Unauthenticated SQL Injection via 'data' Parameter
   author: topscoder
-  severity: high
+  severity: critical
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/2e842051-3820-4538-a359-ab4e1ed3822d?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/983524ad-8696-4239-bee0-f0ef80d7180c?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/wp-members/"
-    google-query: inurl:"/wp-content/plugins/wp-members/"
-    shodan-query: 'http.html:"wp-content/plugins/wp-members/"'
-  tags: cve,wordpress,wp-plugin,wp-members,high,candidate
+    fofa-query: "wp-content/plugins/wpforo/"
+    google-query: inurl:"/wp-content/plugins/wpforo/"
+    shodan-query: 'http.html:"wp-content/plugins/wpforo/"'
+  tags: cve,wordpress,wp-plugin,wpforo,critical,candidate
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/wp-members/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/wpforo/readme.txt"
 
     extractors:
       - type: regex
@@ -43,9 +43,9 @@ http:
 
       - type: word
         words:
-          - "wp-members"
+          - "wpforo"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 3.5.7')
+          - compare_versions(version, '<= 3.2.1')
