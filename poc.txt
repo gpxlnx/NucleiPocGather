@@ -76287,6 +76287,7 @@
 ./poc/cve/CVE-2022-29303_1.yaml
 ./poc/cve/CVE-2022-29303_3.yaml
 ./poc/cve/CVE-2022-29303_4.yaml
+./poc/cve/CVE-2022-29316.yaml
 ./poc/cve/CVE-2022-2933-0mk_shortener-3b798c64-3434-427d-b578-5abbdac8cd0e.yaml
 ./poc/cve/CVE-2022-2933-f5e6a7a570f5c7f71a3880029fa4ebf1.yaml
 ./poc/cve/CVE-2022-2933.yaml
@@ -173329,9 +173330,9 @@
 ./poc/javascript/azuredeploy-json_1.yaml
 ./poc/javascript/basic-post-json-body.yaml
 ./poc/javascript/bjs-phish.yaml
-./poc/javascript/bower-json-768.yaml
 ./poc/javascript/bower-json-769.yaml
 ./poc/javascript/bower-json-770.yaml
+./poc/javascript/bower-json.yaml
 ./poc/javascript/bower-json_1.yaml
 ./poc/javascript/bower-json_2.yaml
 ./poc/javascript/bower-json_3.yaml
@@ -181521,9 +181522,9 @@
 ./poc/open_redirect/brandfolder-open-redirect-779.yaml
 ./poc/open_redirect/brandfolder-open-redirect-780.yaml
 ./poc/open_redirect/brandfolder-open-redirect-780_1.yaml
-./poc/open_redirect/brandfolder-open-redirect-781.yaml
 ./poc/open_redirect/brandfolder-open-redirect-782.yaml
 ./poc/open_redirect/brandfolder-open-redirect-782_1.yaml
+./poc/open_redirect/brandfolder-open-redirect.yaml
 ./poc/open_redirect/brandfolder-open-redirect_1.yaml
 ./poc/open_redirect/brandfolder-open-redirect_3.yaml
 ./poc/open_redirect/brandfolder-open-redirect_4.yaml
@@ -221960,6 +221961,7 @@
 ./poc/other/email_queue-153a9a08-66b3-40fd-963d-93058c863a80.yaml
 ./poc/other/email_reminders-a0adfd13-a9f1-4bec-96ec-6a51cd08e4ea.yaml
 ./poc/other/email_reminders-c9fd7c6b-9ba3-4e27-9b3d-8b1fbcc5e26f.yaml
+./poc/other/email_security_gateway.yaml
 ./poc/other/email_shortcode-c7b5e028-d4ea-4f6d-aee1-0e9661853d43.yaml
 ./poc/other/email_subscribe-033f8b21-6c5a-433f-b60d-5509fb203234.yaml
 ./poc/other/email_subscribe-14ffe10e-e1a6-4752-9ff9-d2b01a49521e.yaml
@@ -281223,7 +281225,7 @@
 ./poc/php/phpunit-9556_1.yaml
 ./poc/php/phpunit-9557.yaml
 ./poc/php/phpunit-9558.yaml
-./poc/php/phpunit-cve-2017-9841-rce.yaml
+./poc/php/phpunit-cve-2017-9841-rce.yml
 ./poc/php/phpunit-result-cache-exposure.yaml
 ./poc/php/phpunit-result-cache-exposure_1.yaml
 ./poc/php/phpunit-result-cache-exposure_2.yaml
@@ -281365,7 +281367,7 @@
 ./poc/php/thinkphp-50x-arbitrary-file-read.yaml
 ./poc/php/thinkphp-50x-arbitrary-file-read_2.yaml
 ./poc/php/thinkphp-50x-arbitrary-fileread.yaml
-./poc/php/thinkphp-controller-rce.yaml
+./poc/php/thinkphp-controller-rce.yml
 ./poc/php/thinkphp-debug-detected.yaml
 ./poc/php/thinkphp-debug-detected_1.yaml
 ./poc/php/thinkphp-detect.yaml
@@ -281490,7 +281492,7 @@
 ./poc/php/yonyou_u8_crm_php_ini_fileread.yaml
 ./poc/php/youphptube-encoder-cve-2019-5127.yml
 ./poc/php/youphptube-encoder-cve-2019-5128.yaml
-./poc/php/youphptube-encoder-cve-2019-5129.yaml
+./poc/php/youphptube-encoder-cve-2019-5129.yml
 ./poc/php/youphptube-encoder.yaml
 ./poc/php/youphptube_encoder.yaml
 ./poc/php/yphplista-3044bd14-b914-4a2a-8e45-1129ac25a38a.yaml
