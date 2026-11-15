@@ -156274,8 +156274,10 @@
 ./poc/cve/CVE-2026-82456.yaml
 ./poc/cve/CVE-2026-82519-really_simple_ssl-74117559-c55a-4b1f-8b39-3a1852463cc0.yaml
 ./poc/cve/CVE-2026-82530-ip2location_country_blocker-3ad83579-aaf4-4303-8ce4-4790e6d729ef.yaml
+./poc/cve/CVE-2026-82568-give_peer_to_peer-8b68d24c-a963-4316-a8f3-8dc6a494e016.yaml
 ./poc/cve/CVE-2026-82607-profile_builder-87287221-ee9b-4ca2-bb35-f8945cd58ce7.yaml
 ./poc/cve/CVE-2026-82627-uncanny_automator-ce918263-dc4a-4db1-a506-a9e6c8125741.yaml
+./poc/cve/CVE-2026-82663-give_peer_to_peer-f424258a-367d-43cb-b66b-1f898391a0ea.yaml
 ./poc/cve/CVE-2026-8279-learning_management_system-d317d40b-2b99-408b-b445-1a789df3c958.yaml
 ./poc/cve/CVE-2026-82814-duplicator-767fb03a-58a3-464b-98b2-5378cfec09ae.yaml
 ./poc/cve/CVE-2026-82814-duplicator_pro-767fb03a-58a3-464b-98b2-5378cfec09ae.yaml
@@ -230247,6 +230249,8 @@
 ./poc/other/give_1.yaml
 ./poc/other/give_2.yaml
 ./poc/other/give_donation_modules_for_divi-c96175ef-03a5-43cb-adec-1b3c9fb8b1eb.yaml
+./poc/other/give_peer_to_peer-8b68d24c-a963-4316-a8f3-8dc6a494e016.yaml
+./poc/other/give_peer_to_peer-f424258a-367d-43cb-b66b-1f898391a0ea.yaml
 ./poc/other/give_tributes-0cdd5562-8755-4ca3-9c16-a5b364f8408b.yaml
 ./poc/other/giveaway-1d9e0bf21577ede31febad46bce13674.yaml
 ./poc/other/giveaway-b02ab0cf-8bdf-4415-bae3-2193c3d75741.yaml
