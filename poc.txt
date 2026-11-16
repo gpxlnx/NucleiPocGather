@@ -70999,8 +70999,8 @@
 ./poc/cve/CVE-2022-0141_2.yaml
 ./poc/cve/CVE-2022-0142-a247d85c2c5bae84785bdfbca1d25a1b.yaml
 ./poc/cve/CVE-2022-0142-visual_form_builder-bdbd3a1a-a206-4e50-893d-1b2d6c8d153a.yaml
+./poc/cve/CVE-2022-0142.yaml
 ./poc/cve/CVE-2022-0142_1.yaml
-./poc/cve/CVE-2022-0142_2.yaml
 ./poc/cve/CVE-2022-0142_4.yaml
 ./poc/cve/CVE-2022-0147-144bebddf232356c65e915db972ba57a.yaml
 ./poc/cve/CVE-2022-0147-wp_gdpr_compliance-3c0b0bf7-55dd-40a1-8f12-f0ec0315c0ec.yaml
@@ -202392,6 +202392,7 @@
 ./poc/other/amo-team-showcase.yaml
 ./poc/other/amo_team_showcase-cf0950d3-4d7b-457a-8e67-df310d2712d4.yaml
 ./poc/other/amoli-7a893319-a83d-4475-991a-2bb7fc90836c.yaml
+./poc/other/amoro.yaml
 ./poc/other/amoveo-6969f36689f856daa199cc1ff530856d.yaml
 ./poc/other/amoveo-a5706025-962f-47e2-8d1d-16bafd937c92.yaml
 ./poc/other/amoveo-b8532cdcf9ef0bd37dc561ec3b57765a.yaml
@@ -203011,6 +203012,7 @@
 ./poc/other/ap_custom_testimonial-171faddd-c60c-4d07-834e-d8149703513b.yaml
 ./poc/other/ap_custom_testimonial-225900ea-ab59-4864-a65b-583730d2703f.yaml
 ./poc/other/ap_honeypot-302c4eb3-d30e-4140-b674-e62b886d1618.yaml
+./poc/other/ap_pagebuilder.yaml
 ./poc/other/ap_plugin_scripteo-038ddfcd-093b-4234-a0b8-a3bf9a3d329f.yaml
 ./poc/other/ap_plugin_scripteo-0605bc15-3a97-46f4-8244-29220ed5ab31.yaml
 ./poc/other/ap_plugin_scripteo-22fa8290-ebab-4fa4-bcba-0053c3b79f76.yaml
@@ -217939,8 +217941,8 @@
 ./poc/other/dep-auto-merge.yml
 ./poc/other/depart_deposit_and_part_payment_for_woo-47b6c561-bb09-4aa4-b891-0068ee4cc225.yaml
 ./poc/other/dependabot.yaml
+./poc/other/dependabot.yml
 ./poc/other/dependabot_1.yml
-./poc/other/dependabot_2.yml
 ./poc/other/dependabot_3.yml
 ./poc/other/dependency-track-panel.yaml
 ./poc/other/dependency-track.yaml
@@ -220300,6 +220302,7 @@
 ./poc/other/e-mobile-panel_1.yaml
 ./poc/other/e-mobile-panel_3.yaml
 ./poc/other/e-mobile-panel_4.yaml
+./poc/other/e-office.yaml
 ./poc/other/e-plugger-srm.yaml
 ./poc/other/e-plugger-srm_3.yaml
 ./poc/other/e-shops-cart2.yaml
@@ -228581,6 +228584,7 @@
 ./poc/other/full_customer-cd393566-b037-40ce-b3cd-12e323e9451b.yaml
 ./poc/other/full_customer-f62a486a-137b-48e5-b276-44438958e811.yaml
 ./poc/other/full_frame-b95baf58-bd99-4682-b2eb-46a402c62c03.yaml
+./poc/other/full_page_cache_warmer.yaml
 ./poc/other/full_screen_menu_for_elementor-feb0f29c-78df-46e6-a6f4-c8548d3e5185.yaml
 ./poc/other/full_site_builder_for_elementor-dc41c4e6-8c8a-4132-b40d-b21557bc3fd5.yaml
 ./poc/other/fullscreen-galleria-667d8a4d3d1ada2f02cda7769b0c26df.yaml
@@ -242458,6 +242462,7 @@
 ./poc/other/maximo_asset_management.yaml
 ./poc/other/maxinet-d09ab1c2-4c89-432d-955a-8bcdd4487056.yaml
 ./poc/other/maxkb-panel.yaml
+./poc/other/maxkb.yaml
 ./poc/other/maxslider-4f8430e8-c349-4425-be4a-0e9d4d80c438.yaml
 ./poc/other/maxslider.yaml
 ./poc/other/mayosis-core.yaml
@@ -248569,6 +248574,7 @@
 ./poc/other/opennewsletter_3.yaml
 ./poc/other/openobserve-panel.yaml
 ./poc/other/openobserve-panel_1.yaml
+./poc/other/openobserve.yaml
 ./poc/other/openpanel.yaml
 ./poc/other/openpgp-form-encryption-76931c01513626ea8c7228845215242a.yaml
 ./poc/other/openpgp-form-encryption_1.yaml
@@ -259784,6 +259790,7 @@
 ./poc/other/seamless-phish_1.yaml
 ./poc/other/seamless_donations-d159130a-c99d-44d3-a130-aa0146f17157.yaml
 ./poc/other/seamless_donations-ed4e1a56-708d-4a12-8153-9568d11fe4d0.yaml
+./poc/other/seata.yaml
 ./poc/other/seatgeek-affiliate-tickets-09712df89f849ba85b08f5f0deb0865b.yaml
 ./poc/other/seatgeek-affiliate-tickets.yaml
 ./poc/other/seatgeek-affiliate-tickets_1.yaml
@@ -261095,6 +261102,7 @@
 ./poc/other/shengjiao-erp-downloadfile-fileread.yaml
 ./poc/other/shenguyun-sgc8000.yaml
 ./poc/other/shenri-elevator.yaml
+./poc/other/shenyu.yaml
 ./poc/other/shenzhoushuma-DCME-320-online_list-fileread.yaml
 ./poc/other/sherk_custom_post_type_displays-d227d4e4-2899-434c-8b93-8d93a89b1b1b.yaml
 ./poc/other/shesfreaky.yaml
@@ -279129,6 +279137,7 @@
 ./poc/other/xen-carousel_1.yaml
 ./poc/other/xen-orchestra-panel.yaml
 ./poc/other/xen_carousel-25ba4be3-0bcd-41ff-8a7a-fd6ae848afb8.yaml
+./poc/other/xen_orchestra.yaml
 ./poc/other/xenapp.yaml
 ./poc/other/xenforo.yaml
 ./poc/other/xenmobile-server-log4j.yaml
