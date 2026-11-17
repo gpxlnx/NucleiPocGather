@@ -1,13 +1,13 @@
-id: apc-network-management-card
+id: ups_network_management_card
 info:
-  name: apc-network-management-card
+  name: ups_network_management_card
   author: cn-kali-team
-  tags: detect,tech,apc-network-management-card
+  tags: detect,tech,ups_network_management_card
   severity: info
   metadata:
     fofa-query:
     - title="apc | log on"
-    product: apc-network-management-card
+    product: ups_network_management_card
     shodan-query:
     - title:"apc | log on"
     vendor: schneider-electric
