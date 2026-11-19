@@ -1,4 +1,4 @@
-id: learnpress-4c04461d-1136-4abf-a7f0-1358ced1d4d6
+id: learnpress-5bdb22e4-66ba-42a0-b6b2-6c69e0fd5ebe
 
 info:
   name: >
@@ -9,7 +9,7 @@ info:
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/4c04461d-1136-4abf-a7f0-1358ced1d4d6?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/5bdb22e4-66ba-42a0-b6b2-6c69e0fd5ebe?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

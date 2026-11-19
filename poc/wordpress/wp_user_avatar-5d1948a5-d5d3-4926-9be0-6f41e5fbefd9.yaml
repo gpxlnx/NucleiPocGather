@@ -1,15 +1,15 @@
-id: wp_user_avatar-e67181d5-e6f5-4a23-898b-df4bbd9fea28
+id: wp_user_avatar-5d1948a5-d5d3-4926-9be0-6f41e5fbefd9
 
 info:
   name: >
-    ProfilePress – Paid Membership, Online Courses (LMS), Ecommerce, User Registration & Login Form, User Profile & Restrict Content < 4.17.6 - Missing Authorization
+    ProfilePress – Paid Membership, Online Courses (LMS), Ecommerce, User Registration & Login Form, User Profile & Restrict Content < 4.17.6 - Missing Authorization to Unauthenticated Unauthorized User Data Disclosure
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/e67181d5-e6f5-4a23-898b-df4bbd9fea28?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/5d1948a5-d5d3-4926-9be0-6f41e5fbefd9?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

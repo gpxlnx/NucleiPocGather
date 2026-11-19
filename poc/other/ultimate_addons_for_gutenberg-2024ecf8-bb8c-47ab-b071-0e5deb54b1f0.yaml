@@ -1,15 +1,15 @@
-id: ultimate_addons_for_gutenberg-f46c1891-d581-4d12-b985-c3eda7a29f87
+id: ultimate_addons_for_gutenberg-2024ecf8-bb8c-47ab-b071-0e5deb54b1f0
 
 info:
   name: >
-    Spectra Legacy – Gutenberg Blocks <= 2.20.5 - Missing Authorization
+    Spectra Legacy – Gutenberg Blocks <= 2.20.5 - Authenticated (Contributor+) Stored Cross-Site Scripting
   author: topscoder
-  severity: high
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f46c1891-d581-4d12-b985-c3eda7a29f87?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/2024ecf8-bb8c-47ab-b071-0e5deb54b1f0?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/ultimate-addons-for-gutenberg/"
     google-query: inurl:"/wp-content/plugins/ultimate-addons-for-gutenberg/"
     shodan-query: 'http.html:"wp-content/plugins/ultimate-addons-for-gutenberg/"'
-  tags: cve,wordpress,wp-plugin,ultimate-addons-for-gutenberg,high,candidate
+  tags: cve,wordpress,wp-plugin,ultimate-addons-for-gutenberg,low,candidate
 
 http:
   - method: GET

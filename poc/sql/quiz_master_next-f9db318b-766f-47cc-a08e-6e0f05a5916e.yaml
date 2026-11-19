@@ -1,15 +1,15 @@
-id: quiz_master_next-e4da4313-91e4-4cff-aafd-4749bd67077f
+id: quiz_master_next-f9db318b-766f-47cc-a08e-6e0f05a5916e
 
 info:
   name: >
-    Quiz and Survey Master (QSM) – Quiz Maker & Survey Maker <= 11.3.0 - Missing Authorization
+    Quiz and Survey Master (QSM) – Quiz Maker & Survey Maker <= 11.3.0 - Unauthenticated Arbitrary Shortcode Execution
   author: topscoder
-  severity: high
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/e4da4313-91e4-4cff-aafd-4749bd67077f?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f9db318b-766f-47cc-a08e-6e0f05a5916e?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/quiz-master-next/"
     google-query: inurl:"/wp-content/plugins/quiz-master-next/"
     shodan-query: 'http.html:"wp-content/plugins/quiz-master-next/"'
-  tags: cve,wordpress,wp-plugin,quiz-master-next,high,candidate
+  tags: cve,wordpress,wp-plugin,quiz-master-next,low,candidate
 
 http:
   - method: GET

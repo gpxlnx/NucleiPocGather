@@ -1,4 +1,4 @@
-id: advance_guest_post-e0589315-7b6c-4fea-aa24-cf61cef99a6a
+id: advance_guest_post-952db86d-d193-49dc-985a-ba8d94de6ba5
 
 info:
   name: >
@@ -9,7 +9,7 @@ info:
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/e0589315-7b6c-4fea-aa24-cf61cef99a6a?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/952db86d-d193-49dc-985a-ba8d94de6ba5?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
