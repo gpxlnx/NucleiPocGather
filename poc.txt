@@ -13271,7 +13271,6 @@
 ./poc/backup/backup-exposure.yaml
 ./poc/backup/backup-fd978ac0-42f2-4746-9430-37458375b588.yaml
 ./poc/backup/backup-file-finder.yaml
-./poc/backup/backup-files.yaml
 ./poc/backup/backup-files_1.yaml
 ./poc/backup/backup-plugin-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/backup/backup-plugin-d41d8cd98f00b204e9800998ecf8427e_1.yaml
@@ -13290,6 +13289,7 @@
 ./poc/backup/backup-wd-64ab5acbc42f53833d0f53612e02b34b.yaml
 ./poc/backup/backup-wd.yaml
 ./poc/backup/backup-wd_1.yaml
+./poc/backup/backup.yaml
 ./poc/backup/backup_2.yaml
 ./poc/backup/backup_and_move-5f4f07bf-192c-442f-ad68-fea1a84c5e87.yaml
 ./poc/backup/backup_and_restore_for_wp-7bfd8c31-4f89-4f09-8d46-11340c4eea1d.yaml
@@ -13690,7 +13690,6 @@
 ./poc/backup/veeam-backup-azure-panel_3.yaml
 ./poc/backup/veeam-backup-azure-panel_4.yaml
 ./poc/backup/veeam-backup-azure-panel_7.yaml
-./poc/backup/veeam-backup-gcp_1.yaml
 ./poc/backup/veeam-backup-manager-login_1.yaml
 ./poc/backup/veeam-backup-manager-login_2.yaml
 ./poc/backup/velero-backup-api-anonymous.yaml
@@ -14054,6 +14053,7 @@
 ./poc/backup/zip-backup-files-8_2.yaml
 ./poc/backup/zip-backup-files-9.yaml
 ./poc/backup/zip-backup-files-9_2.yaml
+./poc/backup/zip-backup-files.yaml
 ./poc/backup/zip-backup-files1.yaml
 ./poc/backup/zip-backup-files10.yaml
 ./poc/backup/zip-backup-files11.yaml
@@ -14094,7 +14094,6 @@
 ./poc/backup/zip-backup-files_22.yaml
 ./poc/backup/zip-backup-files_23.yaml
 ./poc/backup/zip-backup-files_3.yaml
-./poc/backup/zip-backup-files_4.yaml
 ./poc/backup/zip-backup-files_5.yaml
 ./poc/backup/zip-backup-files_6.yaml
 ./poc/backup/zip-backup-files_7.yaml
@@ -14447,13 +14446,13 @@
 ./poc/cnnvd/cnnvd-200705-315-1035.yaml
 ./poc/cnnvd/cnnvd-200705-315-1036.yaml
 ./poc/cnnvd/cnnvd-200705-315.yaml
+./poc/cnnvd/resin-cnnvd-200705-315-9864.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9865.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9865_2.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9866.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9866_1.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9867.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315.yaml
-./poc/cnnvd/resin-cnnvd-200705-315.yml
 ./poc/cnnvd/resin-cnnvd-200705-315_1.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315_2.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315_3.yaml
@@ -14991,7 +14990,7 @@
 ./poc/cnvd/cnvd-2022-03672-1117.yaml
 ./poc/cnvd/coremail-cnvd-2019-16798.yaml
 ./poc/cnvd/datang-ac-default-password-cnvd-2021-04128.yaml
-./poc/cnvd/discuz-ml3x-cnvd-2019-22239.yml
+./poc/cnvd/discuz-ml3x-cnvd-2019-22239.yaml
 ./poc/cnvd/e-zkeco-cnvd-2020-57264-read-file.yaml
 ./poc/cnvd/ecology-loginSSO-sql-CNVD-2021-33202.yaml
 ./poc/cnvd/ecology-loginSSO-sql-CNVD-2021-33202_1.yaml
@@ -15002,7 +15001,6 @@
 ./poc/cnvd/fanwei-Ecology-browser-sqli-CNVD-2023-12632.yaml
 ./poc/cnvd/h5s-video-platform-cnvd-2020-67113-unauth.yaml
 ./poc/cnvd/h5s-video-platform-cnvd-2020-67113-unauth.yml
-./poc/cnvd/joomla-cnvd-2019-34135-rce.yaml
 ./poc/cnvd/metinfo-lfi-cnvd-2018-13393.yaml
 ./poc/cnvd/ruijie-eweb-rce-cnvd-2021-09650.yaml
 ./poc/cnvd/ruijie-uac-cnvd-2021-14536.yaml
@@ -15031,7 +15029,7 @@
 ./poc/coldfusion/coldfusion-3caa015e9cc1bbc260607f4d03476581.yaml
 ./poc/coldfusion/coldfusion-3caa015e9cc1bbc260607f4d03476581_2.yaml
 ./poc/coldfusion/coldfusion-a4b71893-b0fd-476e-aa93-5f0b239e8301.yaml
-./poc/coldfusion/coldfusion-cfide-dir-listing_1.yaml
+./poc/coldfusion/coldfusion-cfide-dir-listing.yaml
 ./poc/coldfusion/coldfusion-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/coldfusion/coldfusion-files.yaml
 ./poc/coldfusion/coldfusion-site.yaml
@@ -164210,6 +164208,7 @@
 ./poc/fuzz/ai-fuzz-ssrf-dnslog.yaml
 ./poc/fuzz/ai-fuzz-ssrf-header-injection.yaml
 ./poc/fuzz/ai-fuzz-ssrf-localhost.yaml
+./poc/fuzz/ai-fuzz-ssrf-redirect.yaml
 ./poc/fuzz/ai-fuzz-xp-cmdshell-oob.yaml
 ./poc/fuzz/ai-fuzz-xp-dirtree-oob.yaml
 ./poc/fuzz/ai-fuzz-xp-fileexist-oob.yaml
@@ -164238,7 +164237,7 @@
 ./poc/fuzz/fuzz-host-header-injection.yaml
 ./poc/fuzz/fuzz-lfi-detection.yaml
 ./poc/fuzz/fuzz-mode.yaml
-./poc/fuzz/fuzz-multi-mode-test.yaml
+./poc/fuzz/fuzz-multi-mode.yaml
 ./poc/fuzz/fuzz-oauth.yaml
 ./poc/fuzz/fuzz-oob-all.yaml
 ./poc/fuzz/fuzz-open-redirect.yaml
@@ -164723,6 +164722,7 @@
 ./poc/gcloud/springcloud-cve-2019-3799.yml
 ./poc/gcloud/springcloud-function-spel-rce.yaml
 ./poc/gcloud/veeam-backup-gcp.yaml
+./poc/gcloud/veeam-backup-gcp_1.yaml
 ./poc/gcloud/veeam-backup-gcp_2.yaml
 ./poc/gcloud/vehiclemonitoringcloudplatform.yaml
 ./poc/gcloud/xc_woo_google_cloud_print-6f593dce-4b56-46c0-becd-75fd16f165a8.yaml
@@ -169350,6 +169350,7 @@
 ./poc/joomla/fg_joomla_to_wordpress-ab87321b-d326-498d-9a75-44692258cae6.yaml
 ./poc/joomla/freejoomlas.yaml
 ./poc/joomla/joomla!.yaml
+./poc/joomla/joomla-cnvd-2019-34135-rce.yaml
 ./poc/joomla/joomla-com-booking-component.yaml
 ./poc/joomla/joomla-com-fabrik-lfi-8370.yaml
 ./poc/joomla/joomla-com-fabrik-lfi-8370_2.yaml
@@ -295012,7 +295013,6 @@
 ./poc/ssrf/WebSphere-SSRF.yaml
 ./poc/ssrf/Weblogic_SSRF漏洞_CVE-2014-4210.yaml
 ./poc/ssrf/Wehsphere-SSRF.yaml
-./poc/ssrf/ai-fuzz-ssrf-redirect.yaml
 ./poc/ssrf/ai-reverse-proxy-ssrf.yaml
 ./poc/ssrf/ai-ssrf-blind.yaml
 ./poc/ssrf/ai-ssrf-url-param.yaml
@@ -295164,7 +295164,6 @@
 ./poc/ssrf/openclaw-ssrf-proxy-bypass.yaml
 ./poc/ssrf/openfire-cve-2019-18394-ssrf.yaml
 ./poc/ssrf/owasp-top10-a10-ssrf-metadata-endpoint.yaml
-./poc/ssrf/poc-yaml-vmware-vcenter-ssrf.yaml
 ./poc/ssrf/podcast-generator-ssrf.yaml
 ./poc/ssrf/portal-api-ssrf.yaml
 ./poc/ssrf/portal-api-ssrf_1.yaml
@@ -297763,6 +297762,7 @@
 ./poc/vmware/VmwareVcenter-Arbitrary-FileRead.yaml
 ./poc/vmware/custom-vmware-vsphere-file-read.yaml
 ./poc/vmware/kaue-xss-vmware-vcloud-director.yaml
+./poc/vmware/poc-yaml-vmware-vcenter-ssrf.yaml
 ./poc/vmware/vmware-airwatch-version-detect.yaml
 ./poc/vmware/vmware-airwatch-version-detect_2.yaml
 ./poc/vmware/vmware-aria-operations-for-logs.yaml
