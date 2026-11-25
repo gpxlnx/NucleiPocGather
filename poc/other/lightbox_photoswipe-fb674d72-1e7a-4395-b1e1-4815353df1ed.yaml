@@ -1,4 +1,4 @@
-id: lightbox_photoswipe-abad0071-3b68-4005-8d72-f6f0a992d581
+id: lightbox_photoswipe-fb674d72-1e7a-4395-b1e1-4815353df1ed
 
 info:
   name: >
@@ -9,7 +9,7 @@ info:
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/abad0071-3b68-4005-8d72-f6f0a992d581?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/fb674d72-1e7a-4395-b1e1-4815353df1ed?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
