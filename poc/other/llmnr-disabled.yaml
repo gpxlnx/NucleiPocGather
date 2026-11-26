@@ -31,3 +31,4 @@ code:
       - type: word
         words:
           - "LLMNR is misconfigured or enabled by default"
+# digest: 4b0a004830460221009c271b50845983de25bc0bceb55c2dc05b8dbce47744d4518037067a61dbaff1022100e156f23090270ba008d25f1fd853a0440a652f761548e7f23885e99540766a94:922c64590222798bb761d5b6d8e72950

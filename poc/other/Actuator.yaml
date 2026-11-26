@@ -4,7 +4,7 @@ info:
   author: Clark
   severity: meduim
   #Look in for exposed info.
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/actuator"
