@@ -7,7 +7,7 @@ info:
   severity: low
   tags: jetbrains,config
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/.idea/WebServers.xml"

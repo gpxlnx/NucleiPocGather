@@ -1,11 +1,9 @@
 id: aws-metadata
-
 info:
   name: AWS Metadata
   author: notnotnotveg
   severity: informative
-
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/latest/meta-data/iam/security-credentials/aws-elasticbeanstalk-ec2-role"

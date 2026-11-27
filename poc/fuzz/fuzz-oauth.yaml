@@ -5,7 +5,7 @@ info:
   author: geeknik
   severity: info
   tags: fuzz,oauth
-http:
+requests:
   - payloads:
       boolean:
         - true

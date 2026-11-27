@@ -10,7 +10,7 @@ info:
   severity: critical
   tags: netgear,disclosure,iot
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/rootDesc.xml"

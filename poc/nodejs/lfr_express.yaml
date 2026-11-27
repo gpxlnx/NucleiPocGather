@@ -1,11 +1,9 @@
 id: Express-LFR-json
-
 info:
   name: LFR  in Express via json
   author: nithissh
   severity: medium
-
-http:
+requests:
   - method: POST
     path:
       - "{{BaseURL}}"
@@ -19,22 +17,22 @@ http:
         status:
           - 500
       - type: word
-        words: 
+        words:
           - "X-Powered-By: Express"
-        part: header  
+        part: header
       - type: word
         words:
           - "ENOENT: no such file or directory"
 
-    # matchers-condition: or
-    # matchers:
-    #   - type: status
-    #     status:
-    #       - 500
-    #   - type: word
-    #     words: 
-    #       - "X-Powered-By: Express"
-    #     part: header  
-    #   - type: word
-    #     words:
-    #       - "ENOENT: no such file or directory"
+# matchers-condition: or
+# matchers:
+#   - type: status
+#     status:
+#       - 500
+#   - type: word
+#     words: 
+#       - "X-Powered-By: Express"
+#     part: header  
+#   - type: word
+#     words:
+#       - "ENOENT: no such file or directory"

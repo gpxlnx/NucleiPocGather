@@ -7,7 +7,7 @@ info:
   severity: low
   tags: php
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/.user.ini"

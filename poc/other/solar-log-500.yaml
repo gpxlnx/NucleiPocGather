@@ -8,7 +8,7 @@ info:
   severity: high
   tags: solarlog
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/lan.html"

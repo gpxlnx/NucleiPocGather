@@ -7,7 +7,7 @@ info:
   severity: high
   tags: redis,config
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/redis.conf"

@@ -7,7 +7,7 @@ info:
   author: geeknik
   severity: info
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/status"

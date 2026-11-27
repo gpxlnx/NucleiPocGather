@@ -7,7 +7,7 @@ info:
   severity: high
   tags: mongodb,robomongo,auth
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/db/robomongo.json"
